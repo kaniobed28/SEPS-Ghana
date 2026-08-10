@@ -6,9 +6,9 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={`container ${styles.footerGrid}`}>
         <div className={styles.footerSection}>
-          <h3 className={styles.logo}>SEPS-Ghana</h3>
+          <h3 className={styles.logo}>SRIG</h3>
           <p className={styles.description}>
-            Space Exploration and Physics Society – Ghana. Educating, engaging, and promoting space science.
+            Space Research Institute Ghana (SRIG). Educating, engaging, and promoting space science.
           </p>
         </div>
         <div className={styles.footerSection}>
@@ -40,7 +40,7 @@ export default function Footer() {
         </div>
       </div>
       <div className={styles.footerBottom}>
-        <p>&copy; {new Date().getFullYear()} Space Exploration and Physics Society – Ghana. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Space Research Institute Ghana (SRIG). All rights reserved.</p>
       </div>
     </footer>
   );

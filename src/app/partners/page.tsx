@@ -3,7 +3,7 @@ import PageHeader from '@/components/PageHeader';
 import { Landmark, Globe2, Building2, ShieldCheck, HeartHandshake } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Partners & Sponsors | SEPS-Ghana',
+  title: 'Partners & Sponsors | SRIG',
   description: 'Our partners and sponsors supporting space exploration and physics in Ghana.',
 };
 

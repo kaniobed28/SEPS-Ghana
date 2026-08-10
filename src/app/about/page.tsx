@@ -3,15 +3,15 @@ import PageHeader from '@/components/PageHeader';
 import { Target, Lightbulb, History, Users } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'About Us | SEPS-Ghana',
-  description: 'Learn about the mission, vision, and leadership of the Space Exploration and Physics Society – Ghana.',
+  title: 'About Us | SRIG',
+  description: 'Learn about the mission, vision, and leadership of the Space Research Institute Ghana (SRIG).',
 };
 
 export default function About() {
   return (
     <div>
       <PageHeader 
-        title="About SEPS-Ghana" 
+        title="About SRIG" 
         subtitle="Bridging the gap between theoretical knowledge and practical space exploration in West Africa."
         imageSrc="/galaxy.png"
       />
@@ -47,7 +47,7 @@ export default function About() {
               Our History & Objectives
             </h2>
             <p style={{ color: 'var(--color-text-primary)', marginBottom: '25px', fontSize: '1.1rem', maxWidth: '800px', lineHeight: 1.8 }}>
-              Founded by a group of passionate physicists and space enthusiasts, SEPS-Ghana was created to build a platform that unites both professionals and amateurs. 
+              Founded by a group of passionate physicists and space enthusiasts, SRIG was created to build a platform that unites both professionals and amateurs. 
               Our key objectives include:
             </p>
             <ul style={{ color: 'var(--color-text-secondary)', marginLeft: '20px', lineHeight: '2', fontSize: '1.05rem', listStyleType: 'square' }}>

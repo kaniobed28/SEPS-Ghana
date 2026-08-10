@@ -7,8 +7,8 @@ import Footer from '@/components/Footer';
 const outfit = Outfit({ subsets: ['latin'], variable: '--font-main' });
 
 export const metadata: Metadata = {
-  title: 'SEPS-Ghana | Space Exploration and Physics Society',
-  description: 'Space Exploration and Physics Society – Ghana (SEPS-Ghana). Educating, engaging, and promoting space science and physics in Ghana.',
+  title: 'SRIG | Space Research Institute Ghana (SRIG)',
+  description: 'Space Research Institute Ghana (SRIG). Educating, engaging, and promoting space science and physics in Ghana.',
 };
 
 export default function RootLayout({

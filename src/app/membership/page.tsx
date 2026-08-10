@@ -3,8 +3,8 @@ import PageHeader from '@/components/PageHeader';
 import { CheckCircle2, Star, GraduationCap, Briefcase, Building } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Membership | SEPS-Ghana',
-  description: 'Join SEPS-Ghana. Discover membership categories, benefits, and how to become a part of our community.',
+  title: 'Membership | SRIG',
+  description: 'Join SRIG. Discover membership categories, benefits, and how to become a part of our community.',
 };
 
 export default function Membership() {
@@ -23,7 +23,7 @@ export default function Membership() {
       icon: <Star size={40} color="var(--color-primary)" />,
       price: 'GHS 200',
       period: '/ year',
-      benefits: ['Voting rights in SEPS-Ghana', 'Free entry to seminars', 'Networking with international agencies', 'Publish in our journal', 'Priority event seating'],
+      benefits: ['Voting rights in SRIG', 'Free entry to seminars', 'Networking with international agencies', 'Publish in our journal', 'Priority event seating'],
       highlight: true,
       color: 'var(--color-primary)'
     },

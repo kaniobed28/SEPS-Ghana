@@ -4,8 +4,8 @@ import PageHeader from '@/components/PageHeader';
 import { Camera } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Gallery | SEPS-Ghana',
-  description: 'Photos and videos of events and activities organized by SEPS-Ghana.',
+  title: 'Gallery | SRIG',
+  description: 'Photos and videos of events and activities organized by SRIG.',
 };
 
 export default function Gallery() {
@@ -13,7 +13,7 @@ export default function Gallery() {
     { id: 1, title: 'Telescope Setup at KNUST', src: '/telescope.png', colSpan: 2 },
     { id: 2, title: 'High School Outreach in Accra', bg: 'linear-gradient(135deg, #16213e, #0f3460)', colSpan: 1 },
     { id: 3, title: 'Deep Space Observation', src: '/galaxy.png', colSpan: 1 },
-    { id: 4, title: 'SEPS Annual Meeting 2025', bg: 'linear-gradient(135deg, #2a1a2e, #050510)', colSpan: 2 },
+    { id: 4, title: 'SRIG Annual Meeting 2025', bg: 'linear-gradient(135deg, #2a1a2e, #050510)', colSpan: 2 },
     { id: 5, title: 'Eclipse Observation 2024', bg: 'linear-gradient(135deg, #0f3460, #050510)', colSpan: 1 },
     { id: 6, title: 'Radio Telescope Visit', bg: 'linear-gradient(135deg, #1a1a2e, #2a1a2e)', colSpan: 2 }
   ];

@@ -15,8 +15,8 @@ export default function Navbar() {
     <header className={styles.header}>
       <div className={`container ${styles.navContainer}`}>
         <Link href="/" className={styles.logo} onClick={closeMenu}>
-          <Image src="/logo.png" alt="SEPS-Ghana Logo" width={32} height={32} />
-          SEPS<span className="glow-text">-Ghana</span>
+          <Image src="/logo.png" alt="SRIG Logo" width={32} height={32} />
+          <span className="glow-text">SRIG</span>
         </Link>
         
         <nav className={`${styles.navLinks} ${isOpen ? styles.active : ''}`}>

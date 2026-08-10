@@ -4,8 +4,8 @@ import PageHeader from '@/components/PageHeader';
 import { MapPin, Mail, Phone, Send } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Contact Us | SEPS-Ghana',
-  description: 'Get in touch with SEPS-Ghana.',
+  title: 'Contact Us | SRIG',
+  description: 'Get in touch with SRIG.',
 };
 
 export default function Contact() {

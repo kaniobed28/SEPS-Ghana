@@ -10,8 +10,9 @@ export default function Home() {
           <h1 className="animate-fade-in">
             Explore the <span className="glow-text">Universe</span> with Us
           </h1>
-          <p className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
-            Space Exploration and Physics Society – Ghana (SEPS-Ghana).
+          <p className="animate-fade-in" style={{ animationDelay: '0.2s', fontSize: '1.2rem', marginBottom: '20px' }}>
+            <strong>Space Research Institute Ghana (SRIG)</strong><br />
+            <span style={{ color: 'var(--color-text-secondary)', fontSize: '1rem' }}>A Space Exploration Association</span><br /><br />
             Join the community of innovators, researchers, and space enthusiasts.
           </p>
           <div className={styles.heroButtons}>
@@ -28,7 +29,7 @@ export default function Home() {
       {/* Intro Section */}
       <section className="section container">
         <div className="glass-panel" style={{ padding: '40px', textAlign: 'center' }}>
-          <h2 className="section-title">Welcome to SEPS-Ghana</h2>
+          <h2 className="section-title">Welcome to SRIG</h2>
           <p style={{ maxWidth: '800px', margin: '0 auto', color: 'var(--color-text-secondary)' }}>
             We are a non-profit organization dedicated to the advancement of space science and physics in Ghana. 
             Our mission is to educate the public, support student research, and foster a community passionate about the cosmos.

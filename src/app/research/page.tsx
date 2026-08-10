@@ -4,8 +4,8 @@ import PageHeader from '@/components/PageHeader';
 import { FileText, BookOpen, GraduationCap, ArrowUpRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Research & Publications | SEPS-Ghana',
-  description: 'Read the latest articles, newsletters, and student research published by SEPS-Ghana.',
+  title: 'Research & Publications | SRIG',
+  description: 'Read the latest articles, newsletters, and student research published by SRIG.',
 };
 
 export default function Research() {
@@ -20,7 +20,7 @@ export default function Research() {
     },
     {
       title: 'The Future of African Space Programs',
-      author: 'SEPS-Ghana Editorial Team',
+      author: 'SRIG Editorial Team',
       date: 'April 2026',
       type: 'Newsletter',
       icon: <BookOpen size={24} color="var(--color-secondary)" />,

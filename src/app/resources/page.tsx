@@ -3,7 +3,7 @@ import PageHeader from '@/components/PageHeader';
 import { Download, FileText, Video, LayoutList } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Resources | SEPS-Ghana',
+  title: 'Resources | SRIG',
   description: 'Physics and space science learning materials.',
 };
 

@@ -3,8 +3,8 @@ import PageHeader from '@/components/PageHeader';
 import { Telescope, Rocket, Wrench, Trophy } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Programs & Projects | SEPS-Ghana',
-  description: 'Explore the research, outreach, astronomy nights, and competitions organized by SEPS-Ghana.',
+  title: 'Programs & Projects | SRIG',
+  description: 'Explore the research, outreach, astronomy nights, and competitions organized by SRIG.',
 };
 
 export default function Programs() {

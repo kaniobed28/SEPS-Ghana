@@ -3,8 +3,8 @@ import PageHeader from '@/components/PageHeader';
 import { CalendarDays, MapPin, ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Events | SEPS-Ghana',
-  description: 'Upcoming conferences, seminars, webinars, and public lectures by SEPS-Ghana.',
+  title: 'Events | SRIG',
+  description: 'Upcoming conferences, seminars, webinars, and public lectures by SRIG.',
 };
 
 export default function Events() {
