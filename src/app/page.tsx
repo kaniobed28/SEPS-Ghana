@@ -6,8 +6,6 @@ export default function Home() {
     <div>
       {/* Hero Section */}
       <section className={styles.hero}>
-        <div className={styles.stars}></div>
-        <div className={styles.twinkling}></div>
         <div className={`container ${styles.heroContent}`}>
           <h1 className="animate-fade-in">
             Explore the <span className="glow-text">Universe</span> with Us

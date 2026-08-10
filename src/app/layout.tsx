@@ -19,6 +19,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={outfit.className}>
+        <div className="stars"></div>
+        <div className="twinkling"></div>
         <Navbar />
         <main>{children}</main>
         <Footer />
