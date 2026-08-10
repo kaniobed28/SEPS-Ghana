@@ -1,26 +1,38 @@
+'use client';
+import { useState } from 'react';
 import Link from 'next/link';
+import { Menu, X } from 'lucide-react';
 import styles from './Navbar.module.css';
 
 export default function Navbar() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleMenu = () => setIsOpen(!isOpen);
+  const closeMenu = () => setIsOpen(false);
+
   return (
     <header className={styles.header}>
       <div className={`container ${styles.navContainer}`}>
-        <Link href="/" className={styles.logo}>
+        <Link href="/" className={styles.logo} onClick={closeMenu}>
           SEPS<span className="glow-text">-Ghana</span>
         </Link>
-        <nav className={styles.navLinks}>
-          <Link href="/">Home</Link>
-          <Link href="/about">About Us</Link>
-          <Link href="/programs">Programs</Link>
-          <Link href="/membership">Membership</Link>
-          <Link href="/events">Events</Link>
-          <Link href="/research">Research</Link>
-          <Link href="/resources">Resources</Link>
-          <Link href="/gallery">Gallery</Link>
-          <Link href="/partners">Partners</Link>
-          <Link href="/contact" className="btn btn-primary" style={{ marginLeft: '10px' }}>Contact</Link>
+        
+        <nav className={`${styles.navLinks} ${isOpen ? styles.active : ''}`}>
+          <Link href="/" onClick={closeMenu}>Home</Link>
+          <Link href="/about" onClick={closeMenu}>About Us</Link>
+          <Link href="/programs" onClick={closeMenu}>Programs</Link>
+          <Link href="/membership" onClick={closeMenu}>Membership</Link>
+          <Link href="/events" onClick={closeMenu}>Events</Link>
+          <Link href="/research" onClick={closeMenu}>Research</Link>
+          <Link href="/resources" onClick={closeMenu}>Resources</Link>
+          <Link href="/gallery" onClick={closeMenu}>Gallery</Link>
+          <Link href="/partners" onClick={closeMenu}>Partners</Link>
+          <Link href="/contact" className="btn btn-primary" style={{ marginLeft: '10px' }} onClick={closeMenu}>Contact</Link>
         </nav>
-        {/* Mobile menu toggle button could be added here */}
+
+        <button className={styles.mobileToggle} onClick={toggleMenu} aria-label="Toggle Menu">
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
+        </button>
       </div>
     </header>
   );

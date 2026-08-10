@@ -39,8 +39,48 @@
   color: var(--color-primary);
 }
 
+.mobileToggle {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--color-text-primary);
+  cursor: pointer;
+  z-index: 1001;
+}
+
 @media (max-width: 1024px) {
+  .mobileToggle {
+    display: block;
+  }
+
   .navLinks {
-    display: none; /* Simplified for desktop first, mobile menu can be added later */
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: rgba(10, 10, 20, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: right 0.4s ease-in-out;
+    border-left: 1px solid var(--color-border);
+    z-index: 1000;
+  }
+
+  .navLinks.active {
+    right: 0;
+  }
+
+  .navLinks a {
+    font-size: 1.2rem;
+  }
+
+  .navLinks .btn {
+    margin-left: 0 !important;
+    margin-top: 20px;
   }
 }
