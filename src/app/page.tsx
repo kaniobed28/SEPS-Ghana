@@ -1,69 +1,64 @@
-import Image from "next/image";
+import Link from 'next/link';
+import styles from './page.module.css';
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert h-5 w-[100px]"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the{" "}
-            <code className="rounded bg-black/[.06] px-1.5 py-0.5 font-mono text-[0.9em] dark:bg-white/[.08]">
-              page.tsx
-            </code>{" "}
-            file.
+    <div>
+      {/* Hero Section */}
+      <section className={styles.hero}>
+        <div className={styles.stars}></div>
+        <div className={styles.twinkling}></div>
+        <div className={`container ${styles.heroContent}`}>
+          <h1 className="animate-fade-in">
+            Explore the <span className="glow-text">Universe</span> with Us
           </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
+          <p className="animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            Space Exploration and Physics Society – Ghana (SEPS-Ghana).
+            Join the community of innovators, researchers, and space enthusiasts.
+          </p>
+          <div className={styles.heroButtons}>
+            <Link href="/membership" className="btn btn-primary">
+              Become a Member
+            </Link>
+            <Link href="/about" className="btn">
+              Learn More
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Intro Section */}
+      <section className="section container">
+        <div className="glass-panel" style={{ padding: '40px', textAlign: 'center' }}>
+          <h2 className="section-title">Welcome to SEPS-Ghana</h2>
+          <p style={{ maxWidth: '800px', margin: '0 auto', color: 'var(--color-text-secondary)' }}>
+            We are a non-profit organization dedicated to the advancement of space science and physics in Ghana. 
+            Our mission is to educate the public, support student research, and foster a community passionate about the cosmos.
           </p>
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert h-[14px] w-4"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={14}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      {/* Quick Links / Highlights */}
+      <section className="section container">
+        <h2 className="section-title">What We Do</h2>
+        <div className="grid-layout">
+          <div className={`glass-panel ${styles.featureCard}`}>
+            <h3>Astronomy Nights</h3>
+            <p>Join us for stargazing and planetary observations using state-of-the-art telescopes.</p>
+            <Link href="/programs" className={styles.featureLink}>Explore Programs &rarr;</Link>
+          </div>
+          <div className={`glass-panel ${styles.featureCard}`}>
+            <h3>Student Research</h3>
+            <p>We provide resources and mentorship for students pursuing physics and astronomy.</p>
+            <Link href="/research" className={styles.featureLink}>Read Research &rarr;</Link>
+          </div>
+          <div className={`glass-panel ${styles.featureCard}`}>
+            <h3>Public Lectures</h3>
+            <p>Attend our seminars and webinars featuring guest speakers from space agencies.</p>
+            <Link href="/events" className={styles.featureLink}>View Events &rarr;</Link>
+          </div>
         </div>
-      </main>
+      </section>
     </div>
   );
 }
