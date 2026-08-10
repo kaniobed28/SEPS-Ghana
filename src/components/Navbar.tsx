@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 import styles from './Navbar.module.css';
 
@@ -14,6 +15,7 @@ export default function Navbar() {
     <header className={styles.header}>
       <div className={`container ${styles.navContainer}`}>
         <Link href="/" className={styles.logo} onClick={closeMenu}>
+          <Image src="/logo.png" alt="SEPS-Ghana Logo" width={32} height={32} />
           SEPS<span className="glow-text">-Ghana</span>
         </Link>
         
