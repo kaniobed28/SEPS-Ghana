@@ -41,13 +41,12 @@
   padding: 8px 16px;
   background-color: rgba(255, 255, 255, 0.05);
   border: 1px solid var(--color-border);
-  border-radius: 20px;
-  font-size: 0.85rem;
-  transition: background-color 0.3s, color 0.3s;
+  color: var(--color-text-primary);
+  transition: all 0.3s ease;
 }
 
 .socialIcon:hover {
   background-color: var(--color-primary);
-  color: var(--color-bg);
-  border-color: var(--color-primary);
+  color: #000;
+  transform: translateY(-3px);
 }
