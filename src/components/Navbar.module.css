@@ -28,14 +28,14 @@
   gap: 20px;
 }
 
-.navLinks a {
+.navLinks a:not(.btn) {
   font-size: 0.95rem;
   font-weight: 500;
   color: var(--color-text-primary);
   transition: color 0.3s ease;
 }
 
-.navLinks a:hover {
+.navLinks a:not(.btn):hover {
   color: var(--color-primary);
 }
 
