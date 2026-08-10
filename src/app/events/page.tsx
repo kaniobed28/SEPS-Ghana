@@ -31,7 +31,7 @@ export default function Events() {
       location: 'University of Ghana Observatory',
       type: 'Public Event',
       desc: 'Experience the night sky through high-powered optical telescopes.',
-      color: '#00f0ff'
+      color: '#e5e7eb'
     }
   ];
 

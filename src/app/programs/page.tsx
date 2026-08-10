@@ -22,12 +22,12 @@ export default function Programs() {
     {
       title: 'Workshops & Training',
       desc: 'Intensive weekend workshops focusing on telescope building, rocketry, data analysis, and orbital mechanics.',
-      icon: <Wrench size={48} color="#00f0ff" />
+      icon: <Wrench size={48} color="#e5e7eb" />
     },
     {
       title: 'National Space Competitions',
       desc: 'Annual competitions encouraging university students to present innovative solutions to modern aerospace challenges.',
-      icon: <Trophy size={48} color="#b026ff" />
+      icon: <Trophy size={48} color="#9ca3af" />
     }
   ];
 

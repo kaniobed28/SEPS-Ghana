@@ -11,8 +11,8 @@ export default function Partners() {
   const partners = [
     { name: 'University of Ghana, Physics Dept.', type: 'Academic Partner', icon: <Landmark size={32} color="#000" />, color: 'var(--color-primary)' },
     { name: 'KNUST Astronomy Club', type: 'Academic Partner', icon: <GraduationCap size={32} color="#000" />, color: 'var(--color-secondary)' },
-    { name: 'Ghana Space Science and Technology Institute (GSSTI)', type: 'Government Agency', icon: <ShieldCheck size={32} color="#000" />, color: '#00f0ff' },
-    { name: 'Global Astronomy Network', type: 'International Collaborator', icon: <Globe2 size={32} color="#000" />, color: '#b026ff' },
+    { name: 'Ghana Space Science and Technology Institute (GSSTI)', type: 'Government Agency', icon: <ShieldCheck size={32} color="#000" />, color: '#e5e7eb' },
+    { name: 'Global Astronomy Network', type: 'International Collaborator', icon: <Globe2 size={32} color="#000" />, color: '#9ca3af' },
     { name: 'TechSpace Foundation', type: 'Sponsor', icon: <Building2 size={32} color="#000" />, color: '#ff26a0' },
   ];
 

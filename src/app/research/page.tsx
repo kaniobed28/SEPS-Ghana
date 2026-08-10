@@ -31,7 +31,7 @@ export default function Research() {
       author: 'KNUST Astronomy Club',
       date: 'March 2026',
       type: 'Student Report',
-      icon: <GraduationCap size={24} color="#00f0ff" />,
+      icon: <GraduationCap size={24} color="#e5e7eb" />,
       link: '#'
     }
   ];

@@ -58,7 +58,7 @@ export default function Membership() {
                 border: cat.highlight ? `2px solid ${cat.color}` : '1px solid var(--color-border)',
                 transform: cat.highlight ? 'scale(1.05)' : 'scale(1)',
                 zIndex: cat.highlight ? 10 : 1,
-                boxShadow: cat.highlight ? `0 0 30px rgba(0, 240, 255, 0.15)` : 'none'
+                boxShadow: cat.highlight ? `0 0 30px rgba(255, 255, 255, 0.15)` : 'none'
               }}
             >
               {cat.highlight && (
