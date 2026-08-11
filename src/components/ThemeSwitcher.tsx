@@ -24,6 +24,8 @@ export function ThemeSwitcher() {
     { name: 'Light', value: 'light' },
     { name: 'Neon', value: 'neon' },
     { name: 'Ocean', value: 'ocean' },
+    { name: 'Yellow', value: 'yellow' },
+    { name: 'Gold', value: 'gold' },
   ];
 
   return (
