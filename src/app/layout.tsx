@@ -3,6 +3,7 @@ import { Outfit } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import { ThemeProvider } from '@/components/ThemeProvider';
 
 const outfit = Outfit({ subsets: ['latin'], variable: '--font-main' });
 
@@ -17,13 +18,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body className={outfit.className}>
-        <div className="stars"></div>
-        <div className="twinkling"></div>
-        <Navbar />
-        <main>{children}</main>
-        <Footer />
+        <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem>
+          <div className="stars"></div>
+          <div className="twinkling"></div>
+          <Navbar />
+          <main>{children}</main>
+          <Footer />
+        </ThemeProvider>
       </body>
     </html>
   );
