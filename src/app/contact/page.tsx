@@ -63,11 +63,11 @@ export default function Contact() {
                   </div>
                 </div>
                 
-                <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
-                  <Mail size={24} color="var(--color-secondary)" />
-                  <div style={{ color: 'var(--color-text-secondary)' }}>
-                    <div>Samuel.abaidoo@nasa.gov</div>
-                    <div>samuelekowabaidoo@gmail.com</div>
+                <div style={{ display: 'flex', gap: '15px', alignItems: 'flex-start' }}>
+                  <Mail size={24} color="var(--color-secondary)" style={{ marginTop: '3px' }} />
+                  <div style={{ color: 'var(--color-text-secondary)', lineHeight: 1.6 }}>
+                    <div><strong style={{ color: 'var(--color-text-primary)' }}>Official Contact:</strong> Samuel.abaidoo@nasa.gov</div>
+                    <div><strong style={{ color: 'var(--color-primary)' }}>General Enquiries:</strong> samuelekowabaidoo@gmail.com</div>
                   </div>
                 </div>
                 
