@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 import styles from './Navbar.module.css';
-import { ThemeSwitcher } from './ThemeSwitcher';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,9 +35,6 @@ export default function Navbar() {
         <button className={styles.mobileToggle} onClick={toggleMenu} aria-label="Toggle Menu">
           {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
-        <div style={{ display: 'flex', alignItems: 'center', marginLeft: 'auto' }}>
-          <ThemeSwitcher />
-        </div>
       </div>
     </header>
   );
