@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import { Space_Grotesk, Inter } from 'next/font/google';
+import Script from 'next/script';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
@@ -43,6 +44,20 @@ export const metadata: Metadata = {
   }
 };
 
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'EducationalOrganization',
+  name: 'Space Research Institute, Ghana',
+  alternateName: 'SRI-Ghana',
+  url: 'https://sri-ghana.org',
+  logo: 'https://sri-ghana.org/image.png',
+  description: 'Research, education, innovation, and capacity-building institution dedicated to advancing space science and technology in Ghana.',
+  email: 'Samuel.abaidoo@nasa.gov',
+  sameAs: [
+    'https://www.nasa.gov'
+  ]
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -50,27 +65,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              '@context': 'https://schema.org',
-              '@type': 'EducationalOrganization',
-              name: 'Space Research Institute, Ghana',
-              alternateName: 'SRI-Ghana',
-              url: 'https://sri-ghana.org',
-              logo: 'https://sri-ghana.org/image.png',
-              description: 'Research, education, innovation, and capacity-building institution dedicated to advancing space science and technology in Ghana.',
-              email: 'Samuel.abaidoo@nasa.gov',
-              sameAs: [
-                'https://www.nasa.gov'
-              ]
-            }),
-          }}
-        />
-      </head>
       <body className={`${inter.variable} ${spaceGrotesk.variable}`}>
+        <Script
+          id="json-ld"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem>
           <div className="stars"></div>
           <div className="twinkling"></div>
