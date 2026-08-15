@@ -75,10 +75,9 @@ export default function Membership() {
             Please fill out the membership registration form below to join SRI-Ghana. Your information will be securely recorded in our database.
           </p>
           
-          <div style={{ position: 'relative', width: '100%', height: '600px', overflow: 'hidden', borderRadius: '15px', border: '1px solid var(--color-border)', background: 'rgba(255,255,255,0.02)' }}>
-            {/* NOTE TO ADMIN: Replace the src URL below with your actual Google Form embed URL */}
+          <div style={{ position: 'relative', width: '100%', height: '800px', overflow: 'hidden', borderRadius: '15px', border: '1px solid var(--color-border)', background: 'rgba(255,255,255,0.02)' }}>
             <iframe 
-              src="https://docs.google.com/forms/d/e/1FAIpQLSfwO_YOUR_FORM_ID_HERE/viewform?embedded=true" 
+              src="https://docs.google.com/forms/d/e/1FAIpQLSe2dSNGA2jja4w-WcgHywhzp-6_dKjM7v3x7exCml5SkW3reA/viewform?embedded=true" 
               width="100%" 
               height="100%" 
               frameBorder="0" 
@@ -88,15 +87,6 @@ export default function Membership() {
             >
               Loading Registration Form...
             </iframe>
-            
-            {/* Overlay placeholder for demonstration while form link is missing */}
-            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0,0,0,0.8)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '40px' }}>
-              <Users size={64} color="var(--color-primary)" style={{ marginBottom: '20px' }} />
-              <h3 style={{ color: 'var(--color-text-primary)', marginBottom: '10px' }}>Google Form Integration Ready</h3>
-              <p style={{ color: 'var(--color-text-secondary)', maxWidth: '500px' }}>
-                The structure is ready. Once the Google Form link is generated, it will be seamlessly embedded right here for global registration.
-              </p>
-            </div>
           </div>
         </div>
 
