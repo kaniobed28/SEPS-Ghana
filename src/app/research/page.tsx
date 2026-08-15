@@ -123,8 +123,11 @@ export default function Research() {
         {/* Building the Next Generation */}
         <div style={{ textAlign: 'center', padding: '40px', borderTop: '1px solid var(--color-border)', maxWidth: '900px', margin: '0 auto' }}>
           <h2 style={{ fontSize: '2rem', color: 'var(--color-text-primary)', marginBottom: '20px' }}>Building the Next Generation</h2>
-          <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem', lineHeight: 1.8, marginBottom: '30px' }}>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem', lineHeight: 1.8, marginBottom: '20px' }}>
             Students can progress from introductory projects at the undergraduate level to advanced research at the Master's and PhD levels, while working alongside researchers and collaborating with national and international institutions.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem', lineHeight: 1.8, marginBottom: '30px' }}>
+            Projects will be identified as Proposed, Ongoing, or Completed, providing transparency about their current stage of development.
           </p>
           <div style={{ background: 'rgba(0, 229, 255, 0.1)', padding: '20px', borderRadius: '8px', border: '1px solid var(--color-primary)', display: 'inline-block' }}>
             <p style={{ color: 'var(--color-primary)', fontWeight: 'bold', letterSpacing: '0.5px' }}>

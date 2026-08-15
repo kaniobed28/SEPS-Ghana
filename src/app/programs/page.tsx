@@ -36,7 +36,7 @@ export default function Programs() {
               SRI-Ghana will work with universities and research partners to provide students with specialized training, mentorship, internships, research opportunities, and access to space-science and technology projects. Our programs are organized into four major areas:
             </p>
             
-            <div className="grid-layout" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px' }}>
+            <div className="grid-layout" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px', marginBottom: '30px' }}>
               <div className="glass-panel hover-lift" style={{ padding: '20px', background: 'rgba(255,255,255,0.02)', textAlign: 'center', borderTop: '3px solid var(--color-primary)' }}>
                 <Globe size={32} color="var(--color-primary)" style={{ margin: '0 auto 15px auto' }} />
                 <h4 style={{ color: 'var(--color-text-primary)' }}>Directorate of Space Science & Exploration</h4>
@@ -54,12 +54,22 @@ export default function Programs() {
                 <h4 style={{ color: 'var(--color-text-primary)' }}>Directorate of Education, Research Training & Innovation</h4>
               </div>
             </div>
+
+            <p style={{ color: 'var(--color-text-primary)', fontSize: '1.2rem', textAlign: 'center', marginBottom: '10px' }}>
+              Together, they provide a pathway to:
+            </p>
+            <h3 style={{ color: 'var(--color-primary)', textAlign: 'center', fontSize: '1.4rem', marginBottom: '30px', letterSpacing: '1px' }}>
+              Inspire &rarr; Educate &rarr; Train &rarr; Research &rarr; Innovate &rarr; Lead
+            </h3>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem', lineHeight: 1.8 }}>
+              The following sections present the undergraduate pathways, Master's specializations, and PhD research areas through which SRI-Ghana will develop Ghana's future space-science and technology workforce.
+            </p>
           </div>
         </div>
 
         {/* Detailed Academic Pathways */}
         <div className="glass-panel" style={{ padding: '50px', marginBottom: '60px' }}>
-          <h2 style={{ fontSize: '2rem', color: 'var(--color-primary)', marginBottom: '40px', textAlign: 'center' }}>Academic Pathways & Research Areas</h2>
+          <h2 style={{ fontSize: '2rem', color: 'var(--color-primary)', marginBottom: '40px', textAlign: 'center' }}>SRI-GHANA ACADEMIC & RESEARCH PROGRAMS</h2>
           
           <div style={{ display: 'flex', flexDirection: 'column', gap: '60px' }}>
             

@@ -20,8 +20,13 @@ export default function Membership() {
         'Space science and STEM outreach activities',
         'Workshops, seminars, and training programs',
         'Student research and innovation projects',
+        'Space science clubs and student activities',
         'Mentorship and career-development programs',
-        'Internships and research opportunities'
+        'Internships and research opportunities',
+        'Astronomy and space-science activities',
+        'Student competitions and challenges',
+        'Networking with scientists, engineers, and researchers',
+        'SRI-Ghana academic and research initiatives'
       ],
       color: 'var(--color-primary)'
     },
@@ -36,7 +41,11 @@ export default function Membership() {
         'Scientific research and collaboration',
         'Student mentorship and supervision',
         'Workshops and professional training',
+        'Research projects and publications',
         'Scientific seminars and conferences',
+        'Technical working groups',
+        'STEM education and outreach',
+        'Technology and innovation initiatives',
         'National and international collaborations'
       ],
       color: 'var(--color-secondary)'
@@ -51,8 +60,13 @@ export default function Membership() {
       benefits: [
         'Joint research and development',
         'Student internships and training',
+        'Technology development',
         'Research sponsorship and support',
-        'Industry–academia partnerships',
+        'STEM education and outreach',
+        'Innovation and entrepreneurship',
+        'Industry-academia partnerships',
+        'Scientific and technical training',
+        'National space projects',
         'International research collaborations'
       ],
       color: '#a0a5b5'
