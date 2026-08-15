@@ -38,19 +38,19 @@ export default function Programs() {
             <div className="grid-layout" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '20px' }}>
               <div className="glass-panel hover-lift" style={{ padding: '20px', background: 'rgba(255,255,255,0.02)', textAlign: 'center', borderTop: '3px solid var(--color-primary)' }}>
                 <Globe size={32} color="var(--color-primary)" style={{ margin: '0 auto 15px auto' }} />
-                <h4 style={{ color: 'var(--color-text-primary)' }}>Space Science & Exploration</h4>
+                <h4 style={{ color: 'var(--color-text-primary)' }}>Directorate of Space Science & Exploration</h4>
               </div>
               <div className="glass-panel hover-lift" style={{ padding: '20px', background: 'rgba(255,255,255,0.02)', textAlign: 'center', borderTop: '3px solid var(--color-secondary)' }}>
                 <Rocket size={32} color="var(--color-secondary)" style={{ margin: '0 auto 15px auto' }} />
-                <h4 style={{ color: 'var(--color-text-primary)' }}>Space Engineering & Technology</h4>
+                <h4 style={{ color: 'var(--color-text-primary)' }}>Directorate of Space Engineering & Technology</h4>
               </div>
               <div className="glass-panel hover-lift" style={{ padding: '20px', background: 'rgba(255,255,255,0.02)', textAlign: 'center', borderTop: '3px solid var(--color-primary)' }}>
                 <Layers size={32} color="var(--color-primary)" style={{ margin: '0 auto 15px auto' }} />
-                <h4 style={{ color: 'var(--color-text-primary)' }}>Space Data, Computing & AI</h4>
+                <h4 style={{ color: 'var(--color-text-primary)' }}>Directorate of Space Data, Computing & Artificial Intelligence</h4>
               </div>
               <div className="glass-panel hover-lift" style={{ padding: '20px', background: 'rgba(255,255,255,0.02)', textAlign: 'center', borderTop: '3px solid var(--color-secondary)' }}>
                 <BookOpen size={32} color="var(--color-secondary)" style={{ margin: '0 auto 15px auto' }} />
-                <h4 style={{ color: 'var(--color-text-primary)' }}>Education, Research & Innovation</h4>
+                <h4 style={{ color: 'var(--color-text-primary)' }}>Directorate of Education, Research Training & Innovation</h4>
               </div>
             </div>
           </div>
@@ -65,7 +65,7 @@ export default function Programs() {
             {/* Space Science & Exploration */}
             <div>
               <h3 style={{ fontSize: '1.5rem', color: 'var(--color-text-primary)', marginBottom: '20px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '10px' }}>
-                I. Space Science & Exploration
+                I. Directorate of Space Science & Exploration
               </h3>
               
               <div className="grid-layout" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', alignItems: 'stretch' }}>
@@ -109,7 +109,7 @@ export default function Programs() {
             {/* Space Engineering & Technology */}
             <div>
               <h3 style={{ fontSize: '1.5rem', color: 'var(--color-text-primary)', marginBottom: '20px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '10px' }}>
-                II. Space Engineering & Technology
+                II. Directorate of Space Engineering & Technology
               </h3>
               
               <div className="grid-layout" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', alignItems: 'stretch' }}>
@@ -152,7 +152,7 @@ export default function Programs() {
             {/* Space Data, Computing & AI */}
             <div>
               <h3 style={{ fontSize: '1.5rem', color: 'var(--color-text-primary)', marginBottom: '20px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '10px' }}>
-                III. Space Data, Computing & AI
+                III. Directorate of Space Data, Computing & Artificial Intelligence
               </h3>
               
               <div className="grid-layout" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', alignItems: 'stretch' }}>
