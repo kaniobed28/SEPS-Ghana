@@ -14,10 +14,12 @@
   z-index: 3;
 }
 
-.heroContent h1 {
+.heroTitle {
   font-size: 4rem;
   margin-bottom: 20px;
   font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -1px;
 }
 
 .heroContent p {
@@ -68,7 +70,8 @@
 }
 
 @media (max-width: 768px) {
-  .heroContent h1 {
-    font-size: 2.5rem;
+  .heroTitle {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
   }
 }

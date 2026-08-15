@@ -85,11 +85,21 @@ export default function Membership() {
         {/* Registration Form Section */}
         <div className="glass-panel" style={{ padding: '50px', marginBottom: '60px', textAlign: 'center' }}>
           <h2 style={{ fontSize: '2rem', color: 'var(--color-text-primary)', marginBottom: '20px' }}>Register Globally</h2>
-          <p style={{ color: 'var(--color-text-secondary)', marginBottom: '40px', fontSize: '1.1rem', maxWidth: '800px', margin: '0 auto 40px auto' }}>
+          <p style={{ color: 'var(--color-text-secondary)', marginBottom: '25px', fontSize: '1.1rem', maxWidth: '800px', margin: '0 auto 25px auto' }}>
             Please fill out the membership registration form below to join SRI-Ghana. Your information will be securely recorded in our database.
           </p>
+          <div style={{ marginBottom: '30px' }}>
+            <a 
+              href="https://docs.google.com/forms/d/e/1FAIpQLSe2dSNGA2jja4w-WcgHywhzp-6_dKjM7v3x7exCml5SkW3reA/viewform" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="btn btn-primary"
+            >
+              Open Form in Full Screen &rarr;
+            </a>
+          </div>
           
-          <div style={{ position: 'relative', width: '100%', height: '800px', overflow: 'hidden', borderRadius: '15px', border: '1px solid var(--color-border)', background: 'rgba(255,255,255,0.02)' }}>
+          <div className="google-form-container">
             <iframe 
               src="https://docs.google.com/forms/d/e/1FAIpQLSe2dSNGA2jja4w-WcgHywhzp-6_dKjM7v3x7exCml5SkW3reA/viewform?embedded=true" 
               width="100%" 
@@ -97,7 +107,8 @@ export default function Membership() {
               frameBorder="0" 
               marginHeight={0} 
               marginWidth={0}
-              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+              scrolling="no"
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', overflow: 'hidden' }}
             >
               Loading Registration Form...
             </iframe>
