@@ -1,11 +1,12 @@
 import type { Metadata } from 'next';
-import { Outfit } from 'next/font/google';
+import { Space_Grotesk, Inter } from 'next/font/google';
 import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { ThemeProvider } from '@/components/ThemeProvider';
 
-const outfit = Outfit({ subsets: ['latin'], variable: '--font-main' });
+const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-heading' });
+const inter = Inter({ subsets: ['latin'], variable: '--font-body' });
 
 export const metadata: Metadata = {
   title: 'SRIG | Space Research Institute Ghana (SRIG)',
@@ -19,7 +20,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={outfit.className}>
+      <body className={`${inter.variable} ${spaceGrotesk.variable}`}>
         <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem>
           <div className="stars"></div>
           <div className="twinkling"></div>
