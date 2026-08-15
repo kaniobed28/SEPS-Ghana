@@ -37,6 +37,26 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Featured Video Section */}
+      <section className="section container">
+        <div className="glass-panel hover-lift" style={{ padding: '50px', textAlign: 'center', background: 'rgba(0, 0, 0, 0.4)' }}>
+          <h2 className="section-title" style={{ marginBottom: '20px' }}>Discover Our Universe</h2>
+          <p style={{ color: 'var(--color-text-secondary)', marginBottom: '40px', fontSize: '1.1rem' }}>
+            Experience the breathtaking beauty of space. Watch this stunning footage from NASA to get inspired.
+          </p>
+          <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px', border: '1px solid var(--color-border)', boxShadow: '0 0 30px rgba(0, 229, 255, 0.2)' }}>
+            <iframe 
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+              src="https://www.youtube.com/embed/6tmbeLTHC_0?autoplay=1&mute=1&loop=1&playlist=6tmbeLTHC_0" 
+              title="NASA | Thermonuclear Art – The Sun In Ultra-HD (4K)" 
+              frameBorder="0" 
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+
       {/* Quick Links / Highlights */}
       <section className="section container">
         <h2 className="section-title">What We Do</h2>
