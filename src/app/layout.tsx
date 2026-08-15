@@ -9,8 +9,38 @@ const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-headi
 const inter = Inter({ subsets: ['latin'], variable: '--font-body' });
 
 export const metadata: Metadata = {
-  title: 'SRIG | Space Research Institute Ghana (SRIG)',
-  description: 'Space Research Institute Ghana (SRIG). Educating, engaging, and promoting space science and physics in Ghana.',
+  title: {
+    default: 'Space Research Institute, Ghana (SRI-Ghana)',
+    template: '%s | SRI-Ghana',
+  },
+  description: 'Developing the next generation of Ghanaian space scientists, engineers, researchers, and innovators.',
+  keywords: [
+    'Space Research Institute Ghana',
+    'SRI-Ghana',
+    'SEPS Ghana',
+    'Space Exploration and Physics Society',
+    'Space Science Ghana',
+    'Heliophysics Africa',
+    'Space Physics Ghana',
+    'Space Engineering Ghana',
+    'Ghana Space Agency',
+    'Astronomy Ghana',
+    'CubeSat Ghana'
+  ],
+  authors: [{ name: 'Space Research Institute, Ghana' }],
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    url: 'https://sri-ghana.org',
+    title: 'Space Research Institute, Ghana (SRI-Ghana)',
+    description: 'Advancing space science, engineering, data, and education in Ghana and Africa.',
+    siteName: 'SRI-Ghana'
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Space Research Institute, Ghana (SRI-Ghana)',
+    description: 'Advancing space science, engineering, data, and education in Ghana and Africa.'
+  }
 };
 
 export default function RootLayout({
@@ -20,6 +50,26 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              '@context': 'https://schema.org',
+              '@type': 'EducationalOrganization',
+              name: 'Space Research Institute, Ghana',
+              alternateName: 'SRI-Ghana',
+              url: 'https://sri-ghana.org',
+              logo: 'https://sri-ghana.org/image.png',
+              description: 'Research, education, innovation, and capacity-building institution dedicated to advancing space science and technology in Ghana.',
+              email: 'Samuel.abaidoo@nasa.gov',
+              sameAs: [
+                'https://www.nasa.gov'
+              ]
+            }),
+          }}
+        />
+      </head>
       <body className={`${inter.variable} ${spaceGrotesk.variable}`}>
         <ThemeProvider attribute="data-theme" defaultTheme="dark" enableSystem>
           <div className="stars"></div>
