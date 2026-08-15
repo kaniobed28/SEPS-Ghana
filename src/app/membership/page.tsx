@@ -1,40 +1,61 @@
 import type { Metadata } from 'next';
 import PageHeader from '@/components/PageHeader';
-import { CheckCircle2, Star, GraduationCap, Briefcase, Building } from 'lucide-react';
+import { GraduationCap, Briefcase, Building, Users } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Membership | SRIG',
-  description: 'Join SRIG. Discover membership categories, benefits, and how to become a part of our community.',
+  title: 'Membership | SRI-Ghana',
+  description: 'Join the SRI-Ghana Community. Membership is free for students, professionals, and organizations.',
 };
 
 export default function Membership() {
   const categories = [
     {
-      name: 'Student Member',
-      icon: <GraduationCap size={40} color="#a0a5b5" />,
-      price: 'GHS 50',
-      period: '/ year',
-      benefits: ['Access to student research grants', 'Discounted event tickets', 'Mentorship programs', 'Digital newsletter'],
-      highlight: false,
-      color: 'var(--color-border)'
-    },
-    {
-      name: 'Professional Member',
-      icon: <Star size={40} color="var(--color-primary)" />,
-      price: 'GHS 200',
-      period: '/ year',
-      benefits: ['Voting rights in SRIG', 'Free entry to seminars', 'Networking with international agencies', 'Publish in our journal', 'Priority event seating'],
-      highlight: true,
+      name: 'Student Membership',
+      tagline: 'Discover. Learn. Explore.',
+      icon: <GraduationCap size={40} color="var(--color-primary)" />,
+      price: 'FREE',
+      who: 'Senior High School | Undergraduate | Master\'s | PhD students',
+      description: 'Open to students with an interest in space science, STEM, engineering, technology, and related fields.',
+      benefits: [
+        'Space science and STEM outreach activities',
+        'Workshops, seminars, and training programs',
+        'Student research and innovation projects',
+        'Mentorship and career-development programs',
+        'Internships and research opportunities'
+      ],
       color: 'var(--color-primary)'
     },
     {
-      name: 'Corporate Member',
-      icon: <Building size={40} color="var(--color-secondary)" />,
-      price: 'GHS 1000',
-      period: '/ year',
-      benefits: ['Logo on our partners page', 'Sponsorship opportunities', 'Dedicated corporate events', 'Full access to all publications'],
-      highlight: false,
+      name: 'Professional Membership',
+      tagline: 'Connect. Collaborate. Contribute.',
+      icon: <Briefcase size={40} color="var(--color-secondary)" />,
+      price: 'FREE',
+      who: 'Scientists, researchers, engineers, educators, professionals',
+      description: 'Become part of a network committed to building scientific capacity and advancing space research in Ghana and Africa.',
+      benefits: [
+        'Scientific research and collaboration',
+        'Student mentorship and supervision',
+        'Workshops and professional training',
+        'Scientific seminars and conferences',
+        'National and international collaborations'
+      ],
       color: 'var(--color-secondary)'
+    },
+    {
+      name: 'Corporate & Institutional',
+      tagline: 'Partner. Support. Innovate.',
+      icon: <Building size={40} color="#a0a5b5" />,
+      price: 'FREE',
+      who: 'Companies, Universities, Research Institutions, NGOs',
+      description: 'An opportunity for organizations to invest in talent, support research, develop technology, and contribute to the ecosystem.',
+      benefits: [
+        'Joint research and development',
+        'Student internships and training',
+        'Research sponsorship and support',
+        'Industry–academia partnerships',
+        'International research collaborations'
+      ],
+      color: '#a0a5b5'
     }
   ];
 
@@ -42,56 +63,102 @@ export default function Membership() {
     <div>
       <PageHeader 
         title="Join Our Community" 
-        subtitle="Become a part of a growing network of space science and physics enthusiasts. Whether you are a student, a working professional, or an organization, we have a place for you."
+        subtitle="The Space Research Institute, Ghana (SRI-Ghana) welcomes everyone committed to advancing space science, technology, education, and innovation in Ghana and Africa."
       />
       
       <div className="container section" style={{ paddingTop: 0 }}>
-        <div className="grid-layout" style={{ alignItems: 'center' }}>
+        
+        {/* Registration Form Section */}
+        <div className="glass-panel" style={{ padding: '50px', marginBottom: '60px', textAlign: 'center' }}>
+          <h2 style={{ fontSize: '2rem', color: 'var(--color-text-primary)', marginBottom: '20px' }}>Register Globally</h2>
+          <p style={{ color: 'var(--color-text-secondary)', marginBottom: '40px', fontSize: '1.1rem', maxWidth: '800px', margin: '0 auto 40px auto' }}>
+            Please fill out the membership registration form below to join SRI-Ghana. Your information will be securely recorded in our database.
+          </p>
+          
+          <div style={{ position: 'relative', width: '100%', height: '600px', overflow: 'hidden', borderRadius: '15px', border: '1px solid var(--color-border)', background: 'rgba(255,255,255,0.02)' }}>
+            {/* NOTE TO ADMIN: Replace the src URL below with your actual Google Form embed URL */}
+            <iframe 
+              src="https://docs.google.com/forms/d/e/1FAIpQLSfwO_YOUR_FORM_ID_HERE/viewform?embedded=true" 
+              width="100%" 
+              height="100%" 
+              frameBorder="0" 
+              marginHeight={0} 
+              marginWidth={0}
+              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
+            >
+              Loading Registration Form...
+            </iframe>
+            
+            {/* Overlay placeholder for demonstration while form link is missing */}
+            <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', background: 'rgba(0,0,0,0.8)', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', padding: '40px' }}>
+              <Users size={64} color="var(--color-primary)" style={{ marginBottom: '20px' }} />
+              <h3 style={{ color: 'var(--color-text-primary)', marginBottom: '10px' }}>Google Form Integration Ready</h3>
+              <p style={{ color: 'var(--color-text-secondary)', maxWidth: '500px' }}>
+                The structure is ready. Once the Google Form link is generated, it will be seamlessly embedded right here for global registration.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Membership Categories */}
+        <h2 style={{ textAlign: 'center', fontSize: '2.5rem', marginBottom: '40px', color: 'var(--color-text-primary)' }}>Membership Categories</h2>
+        
+        <div className="grid-layout" style={{ alignItems: 'stretch', marginBottom: '60px' }}>
           {categories.map((cat, index) => (
             <div 
               key={index} 
-              className={`glass-panel ${cat.highlight ? 'hover-lift' : ''}`}
+              className="glass-panel hover-lift"
               style={{ 
                 padding: '40px 30px', 
-                textAlign: 'center', 
-                position: 'relative',
-                border: cat.highlight ? `2px solid ${cat.color}` : '1px solid var(--color-border)',
-                transform: cat.highlight ? 'scale(1.05)' : 'scale(1)',
-                zIndex: cat.highlight ? 10 : 1,
-                boxShadow: cat.highlight ? `0 0 30px rgba(255, 255, 255, 0.15)` : 'none'
+                textAlign: 'left', 
+                borderTop: `4px solid ${cat.color}`,
+                display: 'flex',
+                flexDirection: 'column'
               }}
             >
-              {cat.highlight && (
-                <div style={{ position: 'absolute', top: '-15px', left: '50%', transform: 'translateX(-50%)', background: cat.color, color: '#000', padding: '5px 15px', borderRadius: '20px', fontSize: '0.8rem', fontWeight: 'bold' }}>
-                  MOST POPULAR
-                </div>
-              )}
-              
-              <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '15px' }}>
+              <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
                 {cat.icon}
               </div>
-              <h3 style={{ fontSize: '1.5rem', marginBottom: '5px' }}>{cat.name}</h3>
+              <h3 style={{ fontSize: '1.6rem', marginBottom: '5px', textAlign: 'center' }}>{cat.name}</h3>
+              <p style={{ color: cat.color, textAlign: 'center', fontWeight: 'bold', marginBottom: '20px' }}>{cat.tagline}</p>
               
-              <div style={{ margin: '25px 0', display: 'flex', justifyContent: 'center', alignItems: 'baseline', gap: '5px' }}>
-                <span style={{ color: cat.color, fontSize: '2.5rem', fontWeight: '800' }}>{cat.price}</span>
-                <span style={{ color: 'var(--color-text-secondary)' }}>{cat.period}</span>
+              <div style={{ margin: '10px 0 25px 0', textAlign: 'center' }}>
+                <span style={{ color: 'var(--color-text-primary)', fontSize: '2rem', fontWeight: '800' }}>{cat.price}</span>
               </div>
               
-              <ul style={{ listStyle: 'none', padding: 0, margin: '0 0 35px 0', textAlign: 'left' }}>
+              <div style={{ marginBottom: '25px', background: 'rgba(255,255,255,0.03)', padding: '15px', borderRadius: '8px' }}>
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', marginBottom: '10px' }}><strong>Who Can Join?</strong><br/>{cat.who}</p>
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>{cat.description}</p>
+              </div>
+              
+              <ul style={{ listStyle: 'none', padding: 0, margin: '0', flexGrow: 1 }}>
                 {cat.benefits.map((benefit, i) => (
-                  <li key={i} style={{ marginBottom: '15px', display: 'flex', gap: '10px', alignItems: 'flex-start', color: 'var(--color-text-secondary)' }}>
-                    <CheckCircle2 size={20} color={cat.color} style={{ flexShrink: 0, marginTop: '2px' }} />
+                  <li key={i} style={{ marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start', color: 'var(--color-text-secondary)', fontSize: '0.95rem' }}>
+                    <span style={{ color: cat.color, flexShrink: 0 }}>•</span>
                     <span style={{ lineHeight: 1.4 }}>{benefit}</span>
                   </li>
                 ))}
               </ul>
-              
-              <button className={cat.highlight ? 'btn btn-primary' : 'btn'} style={{ width: '100%' }}>
-                Select Plan
-              </button>
             </div>
           ))}
         </div>
+
+        {/* One Community. One Vision. */}
+        <div className="glass-panel" style={{ padding: '50px', textAlign: 'center', background: 'linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.5) 100%)' }}>
+          <h2 style={{ fontSize: '2.5rem', color: 'var(--color-primary)', marginBottom: '25px' }}>One Community. One Vision.</h2>
+          <div style={{ color: 'var(--color-text-primary)', fontSize: '1.1rem', lineHeight: 1.8, maxWidth: '900px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+            <p>
+              Regardless of your background, experience, or career stage, there is a place for you at SRI-Ghana.
+            </p>
+            <p>
+              Whether you are a student discovering space science for the first time, a researcher advancing knowledge, a professional sharing expertise, or an organization supporting innovation, your participation can help shape Ghana's future in space.
+            </p>
+            <p style={{ fontWeight: 'bold', color: 'var(--color-secondary)' }}>
+              Join the SRI-Ghana community and be part of a growing network working to inspire young people, develop scientific talent, advance research, create innovative technologies, and contribute to the global space community.
+            </p>
+          </div>
+        </div>
+
       </div>
     </div>
   );

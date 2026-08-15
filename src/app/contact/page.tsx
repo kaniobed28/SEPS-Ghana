@@ -54,19 +54,26 @@ export default function Contact() {
                 <div style={{ display: 'flex', gap: '15px', alignItems: 'flex-start' }}>
                   <MapPin size={24} color="var(--color-secondary)" />
                   <div>
-                    <h4 style={{ color: 'var(--color-text-primary)', marginBottom: '5px' }}>Headquarters</h4>
-                    <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.5 }}>Space Science Center, Accra<br />Greater Accra Region, Ghana</p>
+                    <h4 style={{ color: 'var(--color-text-primary)', marginBottom: '5px' }}>NASA Goddard Space Flight Center</h4>
+                    <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.5 }}>
+                      Samuel Abaidoo (Ph.D.)<br />
+                      Postdoctoral Research Scientist<br />
+                      Code 670, Heliophysics Division
+                    </p>
                   </div>
                 </div>
                 
                 <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
                   <Mail size={24} color="var(--color-secondary)" />
-                  <p style={{ color: 'var(--color-text-secondary)' }}>info@seps-ghana.org</p>
+                  <div style={{ color: 'var(--color-text-secondary)' }}>
+                    <div>Samuel.abaidoo@nasa.gov</div>
+                    <div>samuelekowabaidoo@gmail.com</div>
+                  </div>
                 </div>
                 
                 <div style={{ display: 'flex', gap: '15px', alignItems: 'center' }}>
                   <Phone size={24} color="var(--color-secondary)" />
-                  <p style={{ color: 'var(--color-text-secondary)' }}>+233 (0) 55 123 4567</p>
+                  <p style={{ color: 'var(--color-text-secondary)' }}>+1 301 558 7350</p>
                 </div>
               </div>
             </div>
