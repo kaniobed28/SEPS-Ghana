@@ -19,9 +19,12 @@ export default function Research() {
         
         {/* SRI-GHANA ACADEMIC & RESEARCH PROJECTS */}
         <div style={{ marginBottom: '60px', textAlign: 'center', maxWidth: '900px', margin: '0 auto 60px auto' }}>
-          <h2 style={{ fontSize: '2.5rem', color: 'var(--color-primary)', marginBottom: '20px' }}>Academic & Research Projects</h2>
+          <h2 style={{ fontSize: '2.5rem', color: 'var(--color-primary)', marginBottom: '20px' }}>SRI-GHANA ACADEMIC & RESEARCH PROJECTS</h2>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem', lineHeight: 1.8 }}>
             At the Space Research Institute, Ghana (SRI-Ghana), we believe that meaningful space research begins with education, practical experience, and innovation. Our academic and research projects are designed to provide students, researchers, and collaborators with opportunities to address scientific and technological challenges while developing Ghana's capacity in space science and exploration.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem', lineHeight: 1.8, marginTop: '20px' }}>
+            Our projects span four interconnected areas:
           </p>
         </div>
 
@@ -39,13 +42,13 @@ export default function Research() {
             <Microscope size={40} color="var(--color-secondary)" style={{ marginBottom: '20px' }} />
             <h3 style={{ fontSize: '1.5rem', color: 'var(--color-text-primary)', marginBottom: '15px' }}>Research Projects</h3>
             <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.6 }}>
-              Our research programs address fundamental and applied questions in space science, including space weather, heliophysics, ionospheric and atmospheric science, Earth observation, astronomy, astrophysics, planetary science, and computational space science.
+              Our research programs address fundamental and applied questions in space science, including space weather, heliophysics, ionospheric and atmospheric science, Earth observation, astronomy and astrophysics, planetary science, and computational space science.
             </p>
           </div>
 
           <div className="glass-panel hover-lift" style={{ padding: '40px', borderTop: '4px solid var(--color-primary)' }}>
             <Lightbulb size={40} color="var(--color-primary)" style={{ marginBottom: '20px' }} />
-            <h3 style={{ fontSize: '1.5rem', color: 'var(--color-text-primary)', marginBottom: '15px' }}>Technology & Innovation</h3>
+            <h3 style={{ fontSize: '1.5rem', color: 'var(--color-text-primary)', marginBottom: '15px' }}>Technology & Innovation Projects</h3>
             <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.6 }}>
               We develop and support technologies that enable space research and applications, including satellites and CubeSats, scientific instruments, sensors, robotics, artificial intelligence, satellite communications, and space-data systems.
             </p>
@@ -55,85 +58,28 @@ export default function Research() {
             <Satellite size={40} color="var(--color-secondary)" style={{ marginBottom: '20px' }} />
             <h3 style={{ fontSize: '1.5rem', color: 'var(--color-text-primary)', marginBottom: '15px' }}>Flagship National Projects</h3>
             <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.6 }}>
-              SRI-Ghana will develop strategic national projects that build long-term Ghanaian capability in space science and technology.
+              SRI-Ghana will develop strategic national projects that build long-term Ghanaian capability in space science and technology. These may include the Ghana Space Weather Initiative, Ghana Ionospheric Monitoring Network, SRI-Ghana CubeSat Initiative, Ghana Earth Observation Initiative, and Ghana Space Science Data Center.
             </p>
-            <ul style={{ color: 'var(--color-text-primary)', marginTop: '15px', paddingLeft: '20px', fontSize: '0.95rem' }}>
-              <li style={{ marginBottom: '5px' }}>Ghana Space Weather Initiative</li>
-              <li style={{ marginBottom: '5px' }}>Ghana Ionospheric Monitoring Network</li>
-              <li style={{ marginBottom: '5px' }}>SRI-Ghana CubeSat Initiative</li>
-              <li style={{ marginBottom: '5px' }}>Ghana Earth Observation Initiative</li>
-              <li>Ghana Space Science Data Center</li>
-            </ul>
-          </div>
-        </div>
-
-        {/* Young Space Scientists Program */}
-        <div className="glass-panel" style={{ padding: '50px', marginBottom: '60px', background: 'linear-gradient(180deg, rgba(255,255,255,0.02) 0%, rgba(0,0,0,0.4) 100%)' }}>
-          <div style={{ textAlign: 'center', marginBottom: '40px' }}>
-            <h2 style={{ fontSize: '2.2rem', color: 'var(--color-primary)', marginBottom: '15px' }}>Young Space Scientists Program</h2>
-            <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem', maxWidth: '800px', margin: '0 auto' }}>
-              This is the bridge from education to research. Our programs are designed to create a continuous pathway from education to advanced research and innovation.
-            </p>
-          </div>
-          
-          <div className="grid-layout" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px' }}>
-            
-            {/* Master's Specialization */}
-            <div style={{ background: 'rgba(255,255,255,0.03)', padding: '30px', borderRadius: '12px' }}>
-              <h3 style={{ color: 'var(--color-text-primary)', marginBottom: '10px', fontSize: '1.4rem' }}>SRI-Ghana Graduate Research</h3>
-              <p style={{ color: 'var(--color-secondary)', fontSize: '0.9rem', marginBottom: '20px', fontWeight: 'bold' }}>Master's Specialization</p>
-              <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '20px', lineHeight: 1.8 }}>
-                <li>Research assistantships</li>
-                <li>Graduate research projects</li>
-                <li>Laboratory research</li>
-                <li>International research placements</li>
-                <li>Scientific workshops</li>
-              </ul>
-            </div>
-
-            {/* PhD Research */}
-            <div style={{ background: 'rgba(255,255,255,0.03)', padding: '30px', borderRadius: '12px' }}>
-              <h3 style={{ color: 'var(--color-text-primary)', marginBottom: '10px', fontSize: '1.4rem' }}>SRI-Ghana Doctoral Research</h3>
-              <p style={{ color: 'var(--color-secondary)', fontSize: '0.9rem', marginBottom: '20px', fontWeight: 'bold' }}>PhD Research Areas</p>
-              <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '20px', lineHeight: 1.8 }}>
-                <li>Doctoral research</li>
-                <li>International collaboration</li>
-                <li>Joint supervision</li>
-                <li>Research fellowships</li>
-                <li>Scientific publications</li>
-                <li>Conference participation</li>
-              </ul>
-            </div>
-
-            {/* Postdoctoral */}
-            <div style={{ background: 'rgba(255,255,255,0.03)', padding: '30px', borderRadius: '12px' }}>
-              <h3 style={{ color: 'var(--color-text-primary)', marginBottom: '10px', fontSize: '1.4rem' }}>SRI-Ghana Postdoctoral Fellowship</h3>
-              <p style={{ color: 'var(--color-secondary)', fontSize: '0.9rem', marginBottom: '20px', fontWeight: 'bold' }}>Postdoctoral Program</p>
-              <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '20px', lineHeight: 1.8 }}>
-                <li>Independent research</li>
-                <li>Research leadership</li>
-                <li>International collaboration</li>
-                <li>Supervision and mentorship</li>
-              </ul>
-            </div>
-
           </div>
         </div>
 
         {/* Building the Next Generation */}
-        <div style={{ textAlign: 'center', padding: '40px', borderTop: '1px solid var(--color-border)', maxWidth: '900px', margin: '0 auto' }}>
+        <div style={{ textAlign: 'center', padding: '40px', borderTop: '1px solid var(--color-border)', maxWidth: '900px', margin: '0 auto', marginBottom: '80px' }}>
           <h2 style={{ fontSize: '2rem', color: 'var(--color-text-primary)', marginBottom: '20px' }}>Building the Next Generation</h2>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem', lineHeight: 1.8, marginBottom: '20px' }}>
-            Students can progress from introductory projects at the undergraduate level to advanced research at the Master's and PhD levels, while working alongside researchers and collaborating with national and international institutions.
+            Our projects are designed to create a continuous pathway from education to research and innovation. Students can progress from introductory projects at the undergraduate level to advanced research at the Master's and PhD levels, while working alongside researchers and collaborating with national and international institutions.
           </p>
-          <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem', lineHeight: 1.8, marginBottom: '30px' }}>
-            Projects will be identified as Proposed, Ongoing, or Completed, providing transparency about their current stage of development.
-          </p>
-          <div style={{ background: 'rgba(0, 229, 255, 0.1)', padding: '20px', borderRadius: '8px', border: '1px solid var(--color-primary)', display: 'inline-block' }}>
+          <div style={{ background: 'rgba(0, 229, 255, 0.1)', padding: '20px', borderRadius: '8px', border: '1px solid var(--color-primary)', display: 'inline-block', marginBottom: '20px' }}>
             <p style={{ color: 'var(--color-primary)', fontWeight: 'bold', letterSpacing: '0.5px' }}>
-              SEPS inspires &rarr; Education develops &rarr; Projects provide experience &rarr; Research creates knowledge &rarr; Innovation creates solutions &rarr; Collaboration creates impact
+              SEPS inspires &rarr; Education develops &rarr; Projects provide experience &rarr; Research creates knowledge &rarr; Innovation creates solutions &rarr; Collaboration creates impact.
             </p>
           </div>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem', lineHeight: 1.8, marginBottom: '20px' }}>
+            Projects will be identified as Proposed, Ongoing, or Completed, providing transparency about their current stage of development.
+          </p>
+          <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem', lineHeight: 1.8 }}>
+            Through these initiatives, SRI-Ghana seeks to transform curiosity into knowledge, knowledge into research, and research into innovation, while positioning Ghana to make meaningful contributions to the global space community.
+          </p>
         </div>
 
       </div>
