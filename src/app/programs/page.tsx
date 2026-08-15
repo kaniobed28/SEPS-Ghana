@@ -589,17 +589,51 @@ export default function Programs() {
               <div>
                 <h4 style={{ fontSize: '1.4rem', color: 'var(--color-secondary)', marginBottom: '20px' }}>2. Young Space Scientists Program</h4>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem', marginBottom: '20px' }}>
-                  This is the bridge from education to research. View our <Link href="/research" style={{ color: 'var(--color-primary)', textDecoration: 'underline' }}>Research & Innovation</Link> page for full details on our Graduate, Doctoral, and Postdoctoral fellowships.
+                  This is the bridge from education to research.
                 </p>
                 <div className="grid-layout" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))', gap: '20px', alignItems: 'stretch' }}>
                   <div style={{ background: 'rgba(255,255,255,0.02)', padding: '25px', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)' }}>
-                    <h5 style={{ color: 'var(--color-primary)', marginBottom: '15px', fontSize: '1.2rem' }}>SRI-Ghana Undergraduate Research Program</h5>
-                    <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '20px', fontSize: '1rem', lineHeight: 1.6 }}>
+                    <h5 style={{ color: 'var(--color-primary)', marginBottom: '15px', fontSize: '1.1rem' }}>Undergraduate</h5>
+                    <h6 style={{ color: 'var(--color-text-primary)', marginBottom: '10px', fontSize: '1rem' }}>SRI-Ghana Undergraduate Research Program</h6>
+                    <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '20px', fontSize: '0.9rem', lineHeight: 1.6 }}>
                       <li>Research internships</li>
                       <li>Student research projects</li>
                       <li>Laboratory training</li>
                       <li>Space-data projects</li>
                       <li>Mentorship</li>
+                    </ul>
+                  </div>
+                  <div style={{ background: 'rgba(255,255,255,0.02)', padding: '25px', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                    <h5 style={{ color: 'var(--color-primary)', marginBottom: '15px', fontSize: '1.1rem' }}>Master's Specialization</h5>
+                    <h6 style={{ color: 'var(--color-text-primary)', marginBottom: '10px', fontSize: '1rem' }}>SRI-Ghana Graduate Research Program</h6>
+                    <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '20px', fontSize: '0.9rem', lineHeight: 1.6 }}>
+                      <li>Research assistantships</li>
+                      <li>Graduate research projects</li>
+                      <li>Laboratory research</li>
+                      <li>International research placements</li>
+                      <li>Scientific workshops</li>
+                    </ul>
+                  </div>
+                  <div style={{ background: 'rgba(255,255,255,0.02)', padding: '25px', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                    <h5 style={{ color: 'var(--color-primary)', marginBottom: '15px', fontSize: '1.1rem' }}>PhD Research areas</h5>
+                    <h6 style={{ color: 'var(--color-text-primary)', marginBottom: '10px', fontSize: '1rem' }}>SRI-Ghana Doctoral Research Program</h6>
+                    <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '20px', fontSize: '0.9rem', lineHeight: 1.6 }}>
+                      <li>Doctoral research</li>
+                      <li>International collaboration</li>
+                      <li>Joint supervision</li>
+                      <li>Research fellowships</li>
+                      <li>Scientific publications</li>
+                      <li>Conference participation</li>
+                    </ul>
+                  </div>
+                  <div style={{ background: 'rgba(255,255,255,0.02)', padding: '25px', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                    <h5 style={{ color: 'var(--color-primary)', marginBottom: '15px', fontSize: '1.1rem' }}>Postdoctoral</h5>
+                    <h6 style={{ color: 'var(--color-text-primary)', marginBottom: '10px', fontSize: '1rem' }}>SRI-Ghana Postdoctoral Research Fellowship</h6>
+                    <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '20px', fontSize: '0.9rem', lineHeight: 1.6 }}>
+                      <li>Independent research</li>
+                      <li>Research leadership</li>
+                      <li>International collaboration</li>
+                      <li>Supervision and mentorship</li>
                     </ul>
                   </div>
                 </div>

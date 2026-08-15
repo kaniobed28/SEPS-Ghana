@@ -119,22 +119,22 @@ export default function About() {
               </div>
 
               <div className="glass-panel hover-lift" style={{ padding: '25px', background: 'rgba(255,255,255,0.02)' }}>
-                <h4 style={{ color: 'var(--color-primary)', marginBottom: '10px', fontSize: '1.2rem' }}>5. Promote Innovation & Tech Development</h4>
+                <h4 style={{ color: 'var(--color-primary)', marginBottom: '10px', fontSize: '1.2rem' }}>5. Promote Innovation and Technology Development</h4>
                 <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.6 }}>To encourage the development of locally relevant technologies, scientific instruments, software, data-analysis tools, satellite applications, small satellite technologies, and other innovative solutions that address scientific, environmental, economic, and societal challenges in Ghana and Africa.</p>
               </div>
 
               <div className="glass-panel hover-lift" style={{ padding: '25px', background: 'rgba(255,255,255,0.02)' }}>
-                <h4 style={{ color: 'var(--color-primary)', marginBottom: '10px', fontSize: '1.2rem' }}>6. Establish National & Int. Partnerships</h4>
+                <h4 style={{ color: 'var(--color-primary)', marginBottom: '10px', fontSize: '1.2rem' }}>6. Establish National and International Partnerships</h4>
                 <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.6 }}>To develop strategic partnerships with Ghanaian and international universities, research institutions, government agencies, schools, space organizations, private companies, international space agencies, and other relevant institutions to promote collaborative research, knowledge exchange, training, and technology development.</p>
               </div>
 
               <div className="glass-panel hover-lift" style={{ padding: '25px', background: 'rgba(255,255,255,0.02)' }}>
-                <h4 style={{ color: 'var(--color-primary)', marginBottom: '10px', fontSize: '1.2rem' }}>7. Create a Sustainable Ecosystem</h4>
+                <h4 style={{ color: 'var(--color-primary)', marginBottom: '10px', fontSize: '1.2rem' }}>7. Create a Sustainable Space Research Ecosystem</h4>
                 <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.6 }}>To contribute to the development of a sustainable national ecosystem that enables Ghanaian students, scientists, engineers, and innovators to pursue long-term careers in space science and technology and participate meaningfully in national, African, and global research initiatives.</p>
               </div>
 
               <div className="glass-panel hover-lift" style={{ padding: '25px', background: 'rgba(255,255,255,0.02)' }}>
-                <h4 style={{ color: 'var(--color-primary)', marginBottom: '10px', fontSize: '1.2rem' }}>8. Promote Space Apps for Development</h4>
+                <h4 style={{ color: 'var(--color-primary)', marginBottom: '10px', fontSize: '1.2rem' }}>8. Promote Space Applications for National Development</h4>
                 <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.6 }}>To investigate and promote the use of space-derived technologies and data in addressing national and continental challenges, including environmental monitoring, climate studies, agriculture, disaster management, communications, navigation, resource management, and sustainable development.</p>
               </div>
 
