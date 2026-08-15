@@ -56,6 +56,134 @@ export default function Programs() {
           </div>
         </div>
 
+        {/* Detailed Academic Pathways */}
+        <div className="glass-panel" style={{ padding: '50px', marginBottom: '60px' }}>
+          <h2 style={{ fontSize: '2rem', color: 'var(--color-primary)', marginBottom: '40px', textAlign: 'center' }}>Academic Pathways & Research Areas</h2>
+          
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '60px' }}>
+            
+            {/* Space Science & Exploration */}
+            <div>
+              <h3 style={{ fontSize: '1.5rem', color: 'var(--color-text-primary)', marginBottom: '20px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '10px' }}>
+                I. Space Science & Exploration
+              </h3>
+              
+              <div className="grid-layout" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', alignItems: 'stretch' }}>
+                <div style={{ background: 'rgba(255,255,255,0.02)', padding: '25px', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                  <h4 style={{ color: 'var(--color-secondary)', marginBottom: '15px', fontSize: '1.2rem' }}>Undergraduate Pathways</h4>
+                  <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '20px', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '20px' }}>
+                    <li>Physics & Applied Physics</li>
+                    <li>Earth, Atmospheric & Environmental Science</li>
+                    <li>Mathematics & Computer Science</li>
+                    <li>Engineering & Geology</li>
+                  </ul>
+                  <h5 style={{ color: 'var(--color-text-primary)', marginBottom: '5px', fontSize: '1rem' }}>Space-Related Training:</h5>
+                  <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.5 }}>
+                    Earth Observation, Remote Sensing, Space Physics, Solar Physics, Astronomy, Astrophysics
+                  </p>
+                </div>
+
+                <div style={{ background: 'rgba(255,255,255,0.02)', padding: '25px', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                  <h4 style={{ color: 'var(--color-secondary)', marginBottom: '15px', fontSize: '1.2rem' }}>Master's Specializations</h4>
+                  <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '20px', fontSize: '0.95rem', lineHeight: 1.6 }}>
+                    <li>Earth Observation & Remote Sensing</li>
+                    <li>Atmospheric & Climate Science</li>
+                    <li>Space Physics & Space Weather</li>
+                    <li>Astronomy & Astrophysics</li>
+                    <li>Planetary Science</li>
+                  </ul>
+                </div>
+
+                <div style={{ background: 'rgba(255,255,255,0.02)', padding: '25px', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                  <h4 style={{ color: 'var(--color-secondary)', marginBottom: '15px', fontSize: '1.2rem' }}>PhD Research Areas</h4>
+                  <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '20px', fontSize: '0.95rem', lineHeight: 1.6 }}>
+                    <li>Atmospheric Dynamics & Climate Variability</li>
+                    <li>Solar, Heliospheric & Ionospheric Physics</li>
+                    <li>Stellar, Galactic & Extragalactic Astrophysics</li>
+                    <li>Planetary Geophysics & Atmospheres</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Space Engineering & Technology */}
+            <div>
+              <h3 style={{ fontSize: '1.5rem', color: 'var(--color-text-primary)', marginBottom: '20px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '10px' }}>
+                II. Space Engineering & Technology
+              </h3>
+              
+              <div className="grid-layout" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', alignItems: 'stretch' }}>
+                <div style={{ background: 'rgba(255,255,255,0.02)', padding: '25px', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                  <h4 style={{ color: 'var(--color-secondary)', marginBottom: '15px', fontSize: '1.2rem' }}>Undergraduate Pathways</h4>
+                  <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '20px', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '20px' }}>
+                    <li>Mechanical & Aerospace Engineering</li>
+                    <li>Electrical & Electronic Engineering</li>
+                    <li>Computer & Mechatronics Engineering</li>
+                    <li>Materials Engineering</li>
+                  </ul>
+                  <h5 style={{ color: 'var(--color-text-primary)', marginBottom: '5px', fontSize: '1rem' }}>Space-Related Training:</h5>
+                  <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.5 }}>
+                    Spacecraft Fundamentals, Satellite Systems, Control Systems, CubeSats, Embedded Systems
+                  </p>
+                </div>
+
+                <div style={{ background: 'rgba(255,255,255,0.02)', padding: '25px', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                  <h4 style={{ color: 'var(--color-secondary)', marginBottom: '15px', fontSize: '1.2rem' }}>Master's Specializations</h4>
+                  <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '20px', fontSize: '0.95rem', lineHeight: 1.6 }}>
+                    <li>MSc Space Systems Engineering</li>
+                    <li>Spacecraft Systems & Mission Design</li>
+                    <li>Space Mission Operations</li>
+                    <li>Autonomous Space Systems</li>
+                  </ul>
+                </div>
+
+                <div style={{ background: 'rgba(255,255,255,0.02)', padding: '25px', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                  <h4 style={{ color: 'var(--color-secondary)', marginBottom: '15px', fontSize: '1.2rem' }}>PhD Research Areas</h4>
+                  <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '20px', fontSize: '0.95rem', lineHeight: 1.6 }}>
+                    <li>Spacecraft Systems Architecture</li>
+                    <li>Autonomous Spacecraft & Control</li>
+                    <li>Space Systems Optimization</li>
+                    <li>Advanced Mission Design</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Space Data, Computing & AI */}
+            <div>
+              <h3 style={{ fontSize: '1.5rem', color: 'var(--color-text-primary)', marginBottom: '20px', borderBottom: '1px solid rgba(255,255,255,0.1)', paddingBottom: '10px' }}>
+                III. Space Data, Computing & AI
+              </h3>
+              
+              <div className="grid-layout" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '20px', alignItems: 'stretch' }}>
+                <div style={{ background: 'rgba(255,255,255,0.02)', padding: '25px', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                  <h4 style={{ color: 'var(--color-secondary)', marginBottom: '15px', fontSize: '1.2rem' }}>Undergraduate Pathways</h4>
+                  <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '20px', fontSize: '0.95rem', lineHeight: 1.6, marginBottom: '20px' }}>
+                    <li>Computer Science & Data Science</li>
+                    <li>Mathematics & Statistics</li>
+                    <li>Physics & Engineering</li>
+                  </ul>
+                  <h5 style={{ color: 'var(--color-text-primary)', marginBottom: '5px', fontSize: '1rem' }}>Space-Related Training:</h5>
+                  <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.5 }}>
+                    Programming for Space Science, Satellite Data Processing, Computational Physics, Numerical Methods
+                  </p>
+                </div>
+                
+                <div style={{ background: 'rgba(255,255,255,0.02)', padding: '25px', borderRadius: '12px', border: '1px solid rgba(255,255,255,0.05)' }}>
+                  <h4 style={{ color: 'var(--color-secondary)', marginBottom: '15px', fontSize: '1.2rem' }}>Undergraduate Research Program</h4>
+                  <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '20px', fontSize: '0.95rem', lineHeight: 1.6 }}>
+                    <li>Research internships</li>
+                    <li>Student research projects</li>
+                    <li>Laboratory training</li>
+                    <li>Space-data projects & Mentorship</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+
         {/* STEM Outreach */}
         <div className="grid-layout" style={{ marginBottom: '60px' }}>
           <div className="glass-panel hover-lift" style={{ padding: '40px', display: 'flex', flexDirection: 'column' }}>

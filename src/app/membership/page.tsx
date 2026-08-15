@@ -133,9 +133,9 @@ export default function Membership() {
           ))}
         </div>
 
-        {/* One Community. One Vision. */}
+        {/* One community with a common vision */}
         <div className="glass-panel" style={{ padding: '50px', textAlign: 'center', background: 'linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(0,0,0,0.5) 100%)' }}>
-          <h2 style={{ fontSize: '2.5rem', color: 'var(--color-primary)', marginBottom: '25px' }}>One Community. One Vision.</h2>
+          <h2 style={{ fontSize: '2.5rem', color: 'var(--color-primary)', marginBottom: '25px' }}>One community with a common vision</h2>
           <div style={{ color: 'var(--color-text-primary)', fontSize: '1.1rem', lineHeight: 1.8, maxWidth: '900px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '20px' }}>
             <p>
               Regardless of your background, experience, or career stage, there is a place for you at SRI-Ghana.
