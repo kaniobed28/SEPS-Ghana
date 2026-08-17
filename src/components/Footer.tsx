@@ -2,49 +2,50 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-50 border-t border-slate-200 pt-16 pb-8">
-      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+    <footer className="bg-[#020617] border-t border-white/5 pt-24 pb-12 relative overflow-hidden">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1000px] h-[500px] bg-sky-900/10 rounded-full blur-[100px] pointer-events-none"></div>
+      
+      <div className="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 mb-20 relative z-10">
         <div>
-          <h3 className="font-heading font-bold text-2xl tracking-tight text-slate-900 mb-4">SRI-Ghana</h3>
-          <p className="text-slate-600 text-sm leading-relaxed max-w-xs font-light">
-            Space Research Institute Ghana (SRIG). Educating, engaging, and promoting space science.
+          <h3 className="font-heading font-bold text-2xl tracking-[0.2em] uppercase text-white mb-6">SRI-Ghana</h3>
+          <p className="text-slate-400 text-sm leading-loose max-w-xs font-light">
+            Space Research Institute Ghana. Inspiring, educating, and pushing the boundaries of African space exploration.
           </p>
         </div>
         
         <div>
-          <h4 className="font-heading font-bold text-slate-900 mb-4">Quick Links</h4>
-          <ul className="space-y-3">
-            <li><Link href="/about" className="text-sm text-slate-600 hover:text-sky-700 transition-colors font-medium">About Us</Link></li>
-            <li><Link href="/programs" className="text-sm text-slate-600 hover:text-sky-700 transition-colors font-medium">Programs</Link></li>
-            <li><Link href="/events" className="text-sm text-slate-600 hover:text-sky-700 transition-colors font-medium">Events</Link></li>
-            <li><Link href="/membership" className="text-sm text-slate-600 hover:text-sky-700 transition-colors font-medium">Join Us</Link></li>
+          <h4 className="font-heading font-semibold text-white mb-6 tracking-widest uppercase text-xs">Explore</h4>
+          <ul className="space-y-4">
+            <li><Link href="/about" className="text-sm text-slate-400 hover:text-white transition-colors">About Us</Link></li>
+            <li><Link href="/programs" className="text-sm text-slate-400 hover:text-white transition-colors">Programs</Link></li>
+            <li><Link href="/events" className="text-sm text-slate-400 hover:text-white transition-colors">Events</Link></li>
+            <li><Link href="/membership" className="text-sm text-slate-400 hover:text-white transition-colors">Join Us</Link></li>
           </ul>
         </div>
         
         <div>
-          <h4 className="font-heading font-bold text-slate-900 mb-4">Resources</h4>
-          <ul className="space-y-3">
-            <li><Link href="/research" className="text-sm text-slate-600 hover:text-sky-700 transition-colors font-medium">Research</Link></li>
-            <li><Link href="/resources" className="text-sm text-slate-600 hover:text-sky-700 transition-colors font-medium">Learning Materials</Link></li>
-            <li><Link href="/gallery" className="text-sm text-slate-600 hover:text-sky-700 transition-colors font-medium">Gallery</Link></li>
-            <li><Link href="/partners" className="text-sm text-slate-600 hover:text-sky-700 transition-colors font-medium">Partners</Link></li>
+          <h4 className="font-heading font-semibold text-white mb-6 tracking-widest uppercase text-xs">Resources</h4>
+          <ul className="space-y-4">
+            <li><Link href="/research" className="text-sm text-slate-400 hover:text-white transition-colors">Research</Link></li>
+            <li><Link href="/resources" className="text-sm text-slate-400 hover:text-white transition-colors">Learning Materials</Link></li>
+            <li><Link href="/gallery" className="text-sm text-slate-400 hover:text-white transition-colors">Gallery</Link></li>
+            <li><Link href="/partners" className="text-sm text-slate-400 hover:text-white transition-colors">Partners</Link></li>
           </ul>
         </div>
         
         <div>
-          <h4 className="font-heading font-bold text-slate-900 mb-4">Connect</h4>
-          <ul className="space-y-3">
-            <li><Link href="/contact" className="text-sm text-slate-600 hover:text-sky-700 transition-colors font-medium">Contact Us</Link></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-600 hover:text-sky-700 transition-colors font-medium">Twitter / X</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-600 hover:text-sky-700 transition-colors font-medium">LinkedIn</a></li>
-            <li><a href="#" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-600 hover:text-sky-700 transition-colors font-medium">Facebook</a></li>
+          <h4 className="font-heading font-semibold text-white mb-6 tracking-widest uppercase text-xs">Connect</h4>
+          <ul className="space-y-4">
+            <li><Link href="/contact" className="text-sm text-slate-400 hover:text-white transition-colors">Contact Us</Link></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-400 hover:text-white transition-colors">Twitter / X</a></li>
+            <li><a href="#" target="_blank" rel="noopener noreferrer" className="text-sm text-slate-400 hover:text-white transition-colors">LinkedIn</a></li>
           </ul>
         </div>
       </div>
       
-      <div className="container mx-auto px-6 border-t border-slate-200 pt-8 flex flex-col md:flex-row items-center justify-between gap-4">
-        <p className="text-slate-500 text-sm font-medium">
-          &copy; {new Date().getFullYear()} Space Research Institute Ghana (SRIG). All rights reserved.
+      <div className="container mx-auto px-6 border-t border-white/5 pt-10 flex flex-col items-center justify-center relative z-10">
+        <p className="text-slate-500 text-xs tracking-widest uppercase">
+          &copy; {new Date().getFullYear()} Space Research Institute Ghana. All rights reserved.
         </p>
       </div>
     </footer>
