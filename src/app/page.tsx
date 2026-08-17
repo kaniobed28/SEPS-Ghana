@@ -1,173 +1,197 @@
 import Link from 'next/link';
-import styles from './page.module.css';
 import FadeIn from '@/components/FadeIn';
 import { Globe, Rocket, Layers, BookOpen, ChevronRight, Microscope } from 'lucide-react';
 
 export default function Home() {
   return (
-    <div>
+    <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className={styles.hero} style={{ position: 'relative', overflow: 'hidden', minHeight: '90vh', display: 'flex', alignItems: 'center' }}>
-        <div className={`container ${styles.heroContent}`} style={{ position: 'relative', zIndex: 2 }}>
+      <section className="relative flex items-center min-h-[90vh] py-24 overflow-hidden bg-white">
+        {/* Subtle abstract background graphic for light theme */}
+        <div className="absolute top-0 right-0 w-full h-full overflow-hidden z-0 opacity-40 pointer-events-none">
+          <div className="absolute -top-[20%] -right-[10%] w-[70%] h-[70%] rounded-full bg-sky-50 blur-3xl"></div>
+          <div className="absolute top-[40%] -left-[10%] w-[50%] h-[50%] rounded-full bg-orange-50 blur-3xl"></div>
+        </div>
+
+        <div className="container relative z-10 text-center md:text-left">
           <FadeIn direction="up" delay={0.1}>
-            <h1 className={styles.heroTitle}>
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 max-w-5xl text-slate-900 leading-[1.1]">
               Ghana's Future in <br />
-              <span className="glow-text" style={{ color: 'var(--color-primary)' }}>Space Science</span> & <span className="glow-text" style={{ color: 'var(--color-secondary)' }}>Exploration</span>
+              <span className="text-sky-700">Space Science</span> & <span className="text-orange-600">Exploration</span>
             </h1>
           </FadeIn>
           
           <FadeIn direction="up" delay={0.3}>
-            <p style={{ fontSize: '1.25rem', color: 'var(--color-text-secondary)', maxWidth: '700px', margin: '0 auto 40px auto', lineHeight: 1.6 }}>
+            <p className="text-xl md:text-2xl text-slate-600 max-w-2xl mb-10 leading-relaxed font-light">
               The Space Research Institute, Ghana (SRI-Ghana) is dedicated to advancing space science, technology, education, and innovation, empowering the next generation to contribute to the global space research community.
             </p>
           </FadeIn>
           
           <FadeIn direction="up" delay={0.5}>
-            <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap' }}>
-              <Link href="/membership" className="btn btn-primary" style={{ padding: '15px 30px', fontSize: '1.1rem' }}>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+              <Link href="/membership" className="btn btn-primary text-lg">
                 Join the Community
               </Link>
-              <Link href="/about" className="btn" style={{ padding: '15px 30px', fontSize: '1.1rem' }}>
+              <Link href="/about" className="btn btn-outline text-lg">
                 Our Mission & Vision
               </Link>
             </div>
           </FadeIn>
         </div>
-        
-        {/* Subtle background glow for hero */}
-        <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', width: '800px', height: '800px', background: 'radial-gradient(circle, rgba(0,229,255,0.1) 0%, rgba(0,0,0,0) 70%)', zIndex: 1, pointerEvents: 'none' }}></div>
       </section>
 
       {/* Mission Intro Section */}
-      <section className="section container">
-        <FadeIn direction="up">
-          <div className="glass-panel" style={{ padding: '60px', textAlign: 'center', borderTop: '3px solid var(--color-primary)' }}>
-            <h2 style={{ fontSize: '2.5rem', marginBottom: '20px', color: 'var(--color-text-primary)' }}>Inspire. Educate. Innovate.</h2>
-            <p style={{ maxWidth: '800px', margin: '0 auto', color: 'var(--color-text-secondary)', fontSize: '1.2rem', lineHeight: 1.8, marginBottom: '20px' }}>
-              To inspire, educate, train, and empower the next generation of Ghanaian space scientists, engineers, researchers, and innovators. We aim to build a strong foundation for space exploration and research in Ghana through world-class academic programs, cutting-edge research, and technology development.
-            </p>
-            <Link href="/about" style={{ display: 'inline-flex', alignItems: 'center', color: 'var(--color-primary)', fontWeight: 'bold', fontSize: '1.1rem' }}>
-              Read our full Mission &amp; Vision <ChevronRight size={20} style={{ marginLeft: '5px' }} />
-            </Link>
-          </div>
-        </FadeIn>
-      </section>
-
-      {/* Four Directorates Section */}
-      <section className="section container">
-        <FadeIn direction="up">
-          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
-            <h2 className="section-title">Academic & Research Directorates</h2>
-            <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem', maxWidth: '700px', margin: '0 auto' }}>
-              Our framework provides a clear pathway from early awareness to PhD research and professional scientific careers across four major domains.
-            </p>
-          </div>
-        </FadeIn>
-
-        <div className="grid-layout">
-          <FadeIn delay={0.1}>
-            <Link href="/programs" style={{ display: 'block' }}>
-              <div className="glass-panel hover-lift" style={{ padding: '40px', height: '100%', display: 'flex', flexDirection: 'column', borderTop: '4px solid var(--color-primary)' }}>
-                <Globe size={40} color="var(--color-primary)" style={{ marginBottom: '20px' }} />
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '15px' }}>Space Science & Exploration</h3>
-                <p style={{ color: 'var(--color-text-secondary)', flexGrow: 1, marginBottom: '20px' }}>Earth & Atmospheric Sciences, Heliophysics, Astronomy, and Planetary Sciences.</p>
-                <div style={{ color: 'var(--color-primary)', display: 'flex', alignItems: 'center', fontWeight: 'bold' }}>
-                  Explore Pathway <ChevronRight size={18} style={{ marginLeft: '5px' }} />
-                </div>
-              </div>
-            </Link>
-          </FadeIn>
-
-          <FadeIn delay={0.2}>
-            <Link href="/programs" style={{ display: 'block' }}>
-              <div className="glass-panel hover-lift" style={{ padding: '40px', height: '100%', display: 'flex', flexDirection: 'column', borderTop: '4px solid var(--color-secondary)' }}>
-                <Rocket size={40} color="var(--color-secondary)" style={{ marginBottom: '20px' }} />
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '15px' }}>Space Engineering & Technology</h3>
-                <p style={{ color: 'var(--color-text-secondary)', flexGrow: 1, marginBottom: '20px' }}>Space Systems Engineering, Satellite & CubeSat Technology, Instrumentation & Robotics.</p>
-                <div style={{ color: 'var(--color-secondary)', display: 'flex', alignItems: 'center', fontWeight: 'bold' }}>
-                  Explore Pathway <ChevronRight size={18} style={{ marginLeft: '5px' }} />
-                </div>
-              </div>
-            </Link>
-          </FadeIn>
-
-          <FadeIn delay={0.3}>
-            <Link href="/programs" style={{ display: 'block' }}>
-              <div className="glass-panel hover-lift" style={{ padding: '40px', height: '100%', display: 'flex', flexDirection: 'column', borderTop: '4px solid var(--color-primary)' }}>
-                <Layers size={40} color="var(--color-primary)" style={{ marginBottom: '20px' }} />
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '15px' }}>Space Data, Computing & AI</h3>
-                <p style={{ color: 'var(--color-text-secondary)', flexGrow: 1, marginBottom: '20px' }}>Space Data Science, Computational Space Science, and Artificial Intelligence for Space.</p>
-                <div style={{ color: 'var(--color-primary)', display: 'flex', alignItems: 'center', fontWeight: 'bold' }}>
-                  Explore Pathway <ChevronRight size={18} style={{ marginLeft: '5px' }} />
-                </div>
-              </div>
-            </Link>
-          </FadeIn>
-
-          <FadeIn delay={0.4}>
-            <Link href="/programs" style={{ display: 'block' }}>
-              <div className="glass-panel hover-lift" style={{ padding: '40px', height: '100%', display: 'flex', flexDirection: 'column', borderTop: '4px solid var(--color-secondary)' }}>
-                <BookOpen size={40} color="var(--color-secondary)" style={{ marginBottom: '20px' }} />
-                <h3 style={{ fontSize: '1.5rem', marginBottom: '15px' }}>Education & Innovation</h3>
-                <p style={{ color: 'var(--color-text-secondary)', flexGrow: 1, marginBottom: '20px' }}>STEM Outreach, Workshops, and the Young Space Scientists Program.</p>
-                <div style={{ color: 'var(--color-secondary)', display: 'flex', alignItems: 'center', fontWeight: 'bold' }}>
-                  Explore Pathway <ChevronRight size={18} style={{ marginLeft: '5px' }} />
-                </div>
-              </div>
-            </Link>
+      <section className="section bg-slate-50 border-y border-slate-200">
+        <div className="container">
+          <FadeIn direction="up">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">Inspire. Educate. Innovate.</h2>
+              <p className="text-xl text-slate-600 leading-relaxed mb-8 font-light">
+                To inspire, educate, train, and empower the next generation of Ghanaian space scientists, engineers, researchers, and innovators. We aim to build a strong foundation for space exploration and research in Ghana through world-class academic programs, cutting-edge research, and technology development.
+              </p>
+              <Link href="/about" className="inline-flex items-center text-sky-700 font-semibold hover:text-sky-900 transition-colors text-lg">
+                Read our full Mission & Vision <ChevronRight size={20} className="ml-1" />
+              </Link>
+            </div>
           </FadeIn>
         </div>
       </section>
 
-      {/* Flagship Research Section */}
-      <section className="section container">
-        <FadeIn direction="up">
-          <div className="glass-panel" style={{ display: 'flex', flexWrap: 'wrap', overflow: 'hidden' }}>
-            <div style={{ flex: '1 1 100%', minWidth: '280px', padding: '40px 20px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}>
-              <Microscope size={48} color="var(--color-primary)" style={{ marginBottom: '20px' }} />
-              <h2 style={{ fontSize: '2.5rem', marginBottom: '20px' }}>Flagship National Projects</h2>
-              <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem', lineHeight: 1.8, marginBottom: '30px' }}>
-                SRI-Ghana develops strategic national projects that build long-term capability. These include the Ghana Space Weather Initiative, Ionospheric Monitoring Network, CubeSat Initiative, and the Space Science Data Center.
+      {/* Four Directorates Section */}
+      <section className="section bg-white">
+        <div className="container">
+          <FadeIn direction="up">
+            <div className="text-center mb-16">
+              <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">Academic & Research Directorates</h2>
+              <p className="text-xl text-slate-600 max-w-3xl mx-auto font-light">
+                Our framework provides a clear pathway from early awareness to PhD research and professional scientific careers across four major domains.
               </p>
-              <div>
-                <Link href="/research" className="btn btn-primary" style={{ display: 'inline-flex', alignItems: 'center' }}>
-                  Explore Flagship Projects <ChevronRight size={20} style={{ marginLeft: '5px' }} />
-                </Link>
-              </div>
             </div>
-            <div style={{ flex: '1 1 100%', minWidth: '280px', background: 'rgba(0, 229, 255, 0.05)', minHeight: '300px', position: 'relative' }}>
-              {/* Abstract scientific background representation */}
-              <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', backgroundImage: 'radial-gradient(circle at 20% 30%, rgba(0,229,255,0.2) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(179,136,255,0.2) 0%, transparent 50%)', opacity: 0.8 }}></div>
-              <div style={{ position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)', border: '1px solid rgba(255,255,255,0.1)', width: '200px', height: '200px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <div style={{ border: '1px solid rgba(255,255,255,0.2)', width: '150px', height: '150px', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                  <div style={{ border: '1px solid var(--color-primary)', width: '100px', height: '100px', borderRadius: '50%', boxShadow: '0 0 20px rgba(0,229,255,0.3)' }}></div>
+          </FadeIn>
+
+          <div className="grid-auto-fit">
+            <FadeIn delay={0.1}>
+              <Link href="/programs" className="block h-full">
+                <div className="clean-card p-10 h-full flex flex-col items-start border-t-4 border-t-sky-600 group">
+                  <div className="p-4 bg-sky-50 rounded-2xl mb-6 group-hover:bg-sky-100 transition-colors">
+                    <Globe size={32} className="text-sky-700" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-4">Space Science & Exploration</h3>
+                  <p className="text-slate-600 flex-grow mb-8 text-lg">Earth & Atmospheric Sciences, Heliophysics, Astronomy, and Planetary Sciences.</p>
+                  <div className="text-sky-700 font-semibold flex items-center mt-auto">
+                    Explore Pathway <ChevronRight size={18} className="ml-1 transition-transform group-hover:translate-x-1" />
+                  </div>
+                </div>
+              </Link>
+            </FadeIn>
+
+            <FadeIn delay={0.2}>
+              <Link href="/programs" className="block h-full">
+                <div className="clean-card p-10 h-full flex flex-col items-start border-t-4 border-t-orange-500 group">
+                  <div className="p-4 bg-orange-50 rounded-2xl mb-6 group-hover:bg-orange-100 transition-colors">
+                    <Rocket size={32} className="text-orange-600" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-4">Space Engineering & Technology</h3>
+                  <p className="text-slate-600 flex-grow mb-8 text-lg">Space Systems Engineering, Satellite & CubeSat Technology, Instrumentation & Robotics.</p>
+                  <div className="text-orange-600 font-semibold flex items-center mt-auto">
+                    Explore Pathway <ChevronRight size={18} className="ml-1 transition-transform group-hover:translate-x-1" />
+                  </div>
+                </div>
+              </Link>
+            </FadeIn>
+
+            <FadeIn delay={0.3}>
+              <Link href="/programs" className="block h-full">
+                <div className="clean-card p-10 h-full flex flex-col items-start border-t-4 border-t-sky-600 group">
+                  <div className="p-4 bg-sky-50 rounded-2xl mb-6 group-hover:bg-sky-100 transition-colors">
+                    <Layers size={32} className="text-sky-700" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-4">Space Data, Computing & AI</h3>
+                  <p className="text-slate-600 flex-grow mb-8 text-lg">Space Data Science, Computational Space Science, and Artificial Intelligence for Space.</p>
+                  <div className="text-sky-700 font-semibold flex items-center mt-auto">
+                    Explore Pathway <ChevronRight size={18} className="ml-1 transition-transform group-hover:translate-x-1" />
+                  </div>
+                </div>
+              </Link>
+            </FadeIn>
+
+            <FadeIn delay={0.4}>
+              <Link href="/programs" className="block h-full">
+                <div className="clean-card p-10 h-full flex flex-col items-start border-t-4 border-t-orange-500 group">
+                  <div className="p-4 bg-orange-50 rounded-2xl mb-6 group-hover:bg-orange-100 transition-colors">
+                    <BookOpen size={32} className="text-orange-600" />
+                  </div>
+                  <h3 className="text-2xl font-bold text-slate-900 mb-4">Education & Innovation</h3>
+                  <p className="text-slate-600 flex-grow mb-8 text-lg">STEM Outreach, Workshops, and the Young Space Scientists Program.</p>
+                  <div className="text-orange-600 font-semibold flex items-center mt-auto">
+                    Explore Pathway <ChevronRight size={18} className="ml-1 transition-transform group-hover:translate-x-1" />
+                  </div>
+                </div>
+              </Link>
+            </FadeIn>
+          </div>
+        </div>
+      </section>
+
+      {/* Flagship Research Section */}
+      <section className="section bg-slate-900 text-white">
+        <div className="container">
+          <FadeIn direction="up">
+            <div className="grid md:grid-cols-2 gap-12 items-center">
+              <div className="flex flex-col justify-center">
+                <div className="p-4 bg-sky-500/20 rounded-2xl w-fit mb-8 inline-block">
+                  <Microscope size={40} className="text-sky-400" />
+                </div>
+                <h2 className="text-3xl md:text-5xl font-bold mb-6 tracking-tight">Flagship National Projects</h2>
+                <p className="text-xl text-slate-300 leading-relaxed mb-10 font-light">
+                  SRI-Ghana develops strategic national projects that build long-term capability. These include the Ghana Space Weather Initiative, Ionospheric Monitoring Network, CubeSat Initiative, and the Space Science Data Center.
+                </p>
+                <div>
+                  <Link href="/research" className="btn bg-white text-slate-900 hover:bg-slate-100 border-none inline-flex">
+                    Explore Flagship Projects <ChevronRight size={18} className="ml-2" />
+                  </Link>
+                </div>
+              </div>
+              <div className="min-h-[400px] relative hidden md:block bg-slate-800 rounded-3xl overflow-hidden border border-slate-700 shadow-2xl">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  {/* Modern abstract geometric representation for research */}
+                  <div className="w-[120%] h-[120%] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-sky-900/40 via-slate-900 to-slate-900"></div>
+                  <div className="w-64 h-64 border border-sky-500/20 rounded-full flex items-center justify-center relative">
+                    <div className="absolute inset-0 border border-sky-400/10 rounded-full scale-[1.3]"></div>
+                    <div className="absolute inset-0 border border-sky-300/5 rounded-full scale-[1.6]"></div>
+                    <div className="w-48 h-48 border border-sky-400/30 rounded-full flex items-center justify-center bg-sky-900/20 backdrop-blur-sm">
+                      <div className="w-32 h-32 border-2 border-sky-400/50 rounded-full bg-sky-400/10 shadow-[0_0_30px_rgba(56,189,248,0.2)]"></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </FadeIn>
+          </FadeIn>
+        </div>
       </section>
       
       {/* Video Section */}
-      <section className="section container" style={{ marginBottom: '60px' }}>
-        <FadeIn direction="up">
-          <div className="glass-panel" style={{ padding: '50px', textAlign: 'center', background: 'rgba(0, 0, 0, 0.4)' }}>
-            <h2 className="section-title" style={{ marginBottom: '20px' }}>Discover Our Universe</h2>
-            <p style={{ color: 'var(--color-text-secondary)', marginBottom: '40px', fontSize: '1.1rem' }}>
-              Experience the breathtaking beauty of space. Watch this stunning footage from NASA.
-            </p>
-            <div style={{ position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '12px', border: '1px solid var(--color-border)', boxShadow: '0 0 30px rgba(0, 229, 255, 0.1)' }}>
-              <iframe 
-                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%' }}
-                src="https://www.youtube.com/embed/6tmbeLTHC_0?autoplay=1&mute=1&loop=1&playlist=6tmbeLTHC_0" 
-                title="NASA | Thermonuclear Art" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen
-              ></iframe>
+      <section className="section bg-slate-50">
+        <div className="container">
+          <FadeIn direction="up">
+            <div className="max-w-4xl mx-auto text-center">
+              <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-6 tracking-tight">Discover Our Universe</h2>
+              <p className="text-xl text-slate-600 mb-12 font-light">
+                Experience the breathtaking beauty of space. Watch this stunning footage from NASA.
+              </p>
+              <div className="relative pt-[56.25%] overflow-hidden rounded-3xl border border-slate-200 shadow-xl bg-slate-900">
+                <iframe 
+                  className="absolute top-0 left-0 w-full h-full"
+                  src="https://www.youtube.com/embed/6tmbeLTHC_0?autoplay=1&mute=1&loop=1&playlist=6tmbeLTHC_0" 
+                  title="NASA | Thermonuclear Art" 
+                  frameBorder="0" 
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                  allowFullScreen
+                ></iframe>
+              </div>
             </div>
-          </div>
-        </FadeIn>
+          </FadeIn>
+        </div>
       </section>
 
     </div>
