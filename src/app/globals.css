@@ -201,3 +201,40 @@ a:hover {
     height: 1850px; /* Exact fit for mobile form fields down to Submit button */
   }
 }
+
+/* Programs Page Layout */
+.programs-layout {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.programs-sidebar {
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-right: 20px;
+  border-right: 1px solid rgba(255,255,255,0.1);
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
+}
+
+@media (max-width: 768px) {
+  .programs-layout {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .programs-sidebar {
+    position: relative;
+    top: 0;
+    max-height: none;
+    border-right: none;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    padding-bottom: 20px;
+    padding-right: 0;
+  }
+}

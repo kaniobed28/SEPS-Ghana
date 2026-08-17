@@ -137,6 +137,79 @@ export default function About() {
                 <h4 style={{ color: 'var(--color-primary)', marginBottom: '10px', fontSize: '1.2rem' }}>8. Promote Space Applications for National Development</h4>
                 <p style={{ color: 'var(--color-text-secondary)', lineHeight: 1.6 }}>To investigate and promote the use of space-derived technologies and data in addressing national and continental challenges, including environmental monitoring, climate studies, agriculture, disaster management, communications, navigation, resource management, and sustainable development.</p>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Operational Timeline */}
+        <div className="glass-panel" style={{ padding: '50px', marginBottom: '60px', position: 'relative', overflow: 'hidden' }}>
+          <div style={{ position: 'relative', zIndex: 1 }}>
+            <h2 style={{ fontSize: '2.5rem', color: 'var(--color-primary)', marginBottom: '30px', display: 'flex', alignItems: 'center', gap: '15px' }}>
+              <Target size={36} />
+              Operational Timeline
+            </h2>
+            <div style={{ color: 'var(--color-text-secondary)', lineHeight: 1.8, fontSize: '1.1rem' }}>
+              <p style={{ marginBottom: '15px' }}>
+                SRI-Ghana is currently in its foundational phase, focusing on curriculum development, partnership building, and initial outreach.
+              </p>
+              <ul style={{ paddingLeft: '20px', display: 'flex', flexDirection: 'column', gap: '10px' }}>
+                <li><strong style={{ color: 'var(--color-text-primary)' }}>2025:</strong> Establishment of the Space Exploration and Physics Society (SEPS) across selected high schools.</li>
+                <li><strong style={{ color: 'var(--color-text-primary)' }}>2026:</strong> Rolling out formal undergraduate research programs and initial Master's specializations in collaboration with partner universities.</li>
+                <li><strong style={{ color: 'var(--color-text-primary)' }}>2027-2028:</strong> Launch of dedicated PhD research themes and the first flagship national space projects.</li>
+                <li><strong style={{ color: 'var(--color-text-primary)' }}>2030+:</strong> Full operationalization of the four core directorates and state-of-the-art research facilities.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* Founding Faculty & Leadership */}
+        <div className="glass-panel" style={{ padding: '50px', marginBottom: '60px', position: 'relative', overflow: 'hidden' }}>
+          <div style={{ position: 'relative', zIndex: 1 }}>
+            <h2 style={{ fontSize: '2.5rem', color: 'var(--color-secondary)', marginBottom: '30px', display: 'flex', alignItems: 'center', gap: '15px' }}>
+              <Lightbulb size={36} />
+              Founding Faculty & Leadership
+            </h2>
+            <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem', marginBottom: '30px' }}>
+              The Institute is led by a dedicated team of visionary academics, engineers, and researchers committed to advancing Ghana's space ecosystem.
+            </p>
+            
+            <div className="grid-layout" style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '30px' }}>
+              
+              <div className="glass-panel hover-lift" style={{ padding: '25px', background: 'rgba(255,255,255,0.02)', textAlign: 'center' }}>
+                <div style={{ width: '100px', height: '100px', borderRadius: '50%', background: 'rgba(255,255,255,0.1)', margin: '0 auto 20px auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Info size={40} color="var(--color-primary)" />
+                </div>
+                <h4 style={{ color: 'var(--color-text-primary)', marginBottom: '5px', fontSize: '1.2rem' }}>Dr. John Doe</h4>
+                <p style={{ color: 'var(--color-primary)', fontSize: '0.9rem', marginBottom: '15px' }}>Executive Director</p>
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.5 }}>Expertise in Heliophysics and Space Weather. Leading the strategic vision of SRI-Ghana.</p>
+              </div>
+
+              <div className="glass-panel hover-lift" style={{ padding: '25px', background: 'rgba(255,255,255,0.02)', textAlign: 'center' }}>
+                <div style={{ width: '100px', height: '100px', borderRadius: '50%', background: 'rgba(255,255,255,0.1)', margin: '0 auto 20px auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Info size={40} color="var(--color-secondary)" />
+                </div>
+                <h4 style={{ color: 'var(--color-text-primary)', marginBottom: '5px', fontSize: '1.2rem' }}>Prof. Jane Smith</h4>
+                <p style={{ color: 'var(--color-secondary)', fontSize: '0.9rem', marginBottom: '15px' }}>Director, Space Engineering</p>
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.5 }}>Specialist in Satellite Systems and CubeSat Development.</p>
+              </div>
+
+              <div className="glass-panel hover-lift" style={{ padding: '25px', background: 'rgba(255,255,255,0.02)', textAlign: 'center' }}>
+                <div style={{ width: '100px', height: '100px', borderRadius: '50%', background: 'rgba(255,255,255,0.1)', margin: '0 auto 20px auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Info size={40} color="var(--color-primary)" />
+                </div>
+                <h4 style={{ color: 'var(--color-text-primary)', marginBottom: '5px', fontSize: '1.2rem' }}>Dr. Kwame Mensah</h4>
+                <p style={{ color: 'var(--color-primary)', fontSize: '0.9rem', marginBottom: '15px' }}>Director, Data & AI</p>
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.5 }}>Pioneer in Space Data Science and Machine Learning applications for Earth Observation.</p>
+              </div>
+
+              <div className="glass-panel hover-lift" style={{ padding: '25px', background: 'rgba(255,255,255,0.02)', textAlign: 'center' }}>
+                <div style={{ width: '100px', height: '100px', borderRadius: '50%', background: 'rgba(255,255,255,0.1)', margin: '0 auto 20px auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Info size={40} color="var(--color-secondary)" />
+                </div>
+                <h4 style={{ color: 'var(--color-text-primary)', marginBottom: '5px', fontSize: '1.2rem' }}>Sarah Osei</h4>
+                <p style={{ color: 'var(--color-secondary)', fontSize: '0.9rem', marginBottom: '15px' }}>Director, Education & Outreach</p>
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.5 }}>Leading the SEPS initiative and STEM outreach across high schools in Ghana.</p>
+              </div>
 
             </div>
           </div>
