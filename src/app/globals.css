@@ -1,23 +1,26 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: #F8FAFC;
-  --color-foreground: #0F172A;
+  --color-background: #ffffff;
+  --color-foreground: #09090b;
   
-  --color-muted: #F1F5F9;
-  --color-muted-foreground: #64748B;
+  --color-muted: #f4f4f5;
+  --color-muted-foreground: #71717a;
   
-  --color-border: #E2E8F0;
-  --color-border-hover: #CBD5E1;
+  --color-border: #e4e4e7;
+  --color-border-hover: #d4d4d8;
   
-  --color-primary: #0284C7;
-  --color-primary-foreground: #FFFFFF;
+  --color-primary: #0284c7;
+  --color-primary-foreground: #ffffff;
   
-  --color-secondary: #EA580C;
-  --color-secondary-foreground: #FFFFFF;
+  --color-secondary: #f97316;
+  --color-secondary-foreground: #ffffff;
 
-  --font-sans: var(--font-body), ui-sans-serif, system-ui, sans-serif;
-  --font-heading: var(--font-heading), ui-sans-serif, system-ui, sans-serif;
+  --color-accent: #f8fafc;
+  --color-accent-foreground: #0f172a;
+
+  --font-sans: var(--font-body), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-heading: var(--font-heading), -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 @layer base {
@@ -27,6 +30,10 @@
     margin: 0;
   }
   
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
@@ -40,96 +47,129 @@
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-heading);
     font-weight: 700;
-    line-height: 1.15;
-    letter-spacing: -0.02em;
-    color: #0F172A;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+    color: #09090b;
   }
   
   a {
     color: inherit;
     text-decoration: none;
-    transition: color 0.2s ease;
-  }
-  
-  a:hover {
-    color: var(--color-primary);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
 @layer utilities {
   .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 24px;
   }
 
   .section {
-    padding: 112px 0;
+    padding: 120px 0;
+    position: relative;
   }
   
   @media (max-width: 768px) {
     .section {
-      padding: 72px 0;
+      padding: 80px 0;
     }
   }
 
   .clean-card {
-    background: #FFFFFF;
-    border: 1px solid var(--color-border);
-    border-radius: 16px;
-    box-shadow: 0 4px 20px -2px rgba(15, 23, 42, 0.05);
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    background: #ffffff;
+    border: 1px solid rgba(228, 228, 231, 0.5);
+    border-radius: 24px;
+    box-shadow: 0 4px 24px -6px rgba(0, 0, 0, 0.03), 0 1px 4px -1px rgba(0, 0, 0, 0.02);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: hidden;
   }
   
+  .clean-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: transparent;
+    transition: background 0.4s ease;
+  }
+
   .clean-card:hover {
-    border-color: var(--color-border-hover);
-    box-shadow: 0 12px 30px -4px rgba(15, 23, 42, 0.08);
-    transform: translateY(-4px);
+    border-color: rgba(228, 228, 231, 0.8);
+    box-shadow: 0 20px 40px -8px rgba(0, 0, 0, 0.08), 0 8px 16px -4px rgba(0, 0, 0, 0.04);
+    transform: translateY(-6px);
   }
 
   .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    padding: 14px 28px;
-    font-weight: 600;
+    padding: 16px 32px;
+    font-weight: 500;
     font-family: var(--font-sans);
-    border-radius: 9999px; /* Pill shape for premium feel */
-    transition: all 0.2s ease;
+    border-radius: 9999px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-    font-size: 1rem;
+    font-size: 1.05rem;
+    letter-spacing: -0.01em;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .btn::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to bottom, rgba(255,255,255,0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+
+  .btn:hover::after {
+    opacity: 1;
   }
 
   .btn-primary {
-    background-color: var(--color-primary);
-    color: var(--color-primary-foreground);
-    border: 1px solid var(--color-primary);
-    box-shadow: 0 4px 14px 0 rgba(2, 132, 199, 0.39);
+    background-color: #09090b;
+    color: #ffffff;
+    border: 1px solid #09090b;
+    box-shadow: 0 8px 20px -4px rgba(9, 9, 11, 0.2);
   }
   
   .btn-primary:hover {
-    background-color: #0369A1;
-    border-color: #0369A1;
-    transform: translateY(-1px);
-    box-shadow: 0 6px 20px rgba(2, 132, 199, 0.23);
+    transform: translateY(-2px);
+    box-shadow: 0 12px 24px -6px rgba(9, 9, 11, 0.3);
   }
 
   .btn-outline {
     background-color: transparent;
-    color: var(--color-foreground);
-    border: 1.5px solid var(--color-border-hover);
+    color: #09090b;
+    border: 1px solid #e4e4e7;
+    backdrop-filter: blur(8px);
   }
   
   .btn-outline:hover {
-    border-color: var(--color-foreground);
-    background-color: var(--color-muted);
+    border-color: #09090b;
+    background-color: rgba(244, 244, 245, 0.5);
+    transform: translateY(-2px);
   }
 
   .grid-auto-fit {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 32px;
+  }
+
+  .glass-panel {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.5);
   }
 }
 
@@ -139,8 +179,27 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.4; transform: scale(1); }
+  50% { opacity: 0.7; transform: scale(1.05); }
+}
+
 .animate-fade-in {
   animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s cubic-bezier(0.4, 0, 0.6, 1) infinite;
 }
 
 /* Base structural fixes for programs sidebar if used */
@@ -175,3 +234,4 @@
     padding-bottom: 24px;
   }
 }
+
