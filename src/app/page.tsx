@@ -43,9 +43,12 @@ export default function Home() {
         <FadeIn direction="up">
           <div className="glass-panel" style={{ padding: '60px', textAlign: 'center', borderTop: '3px solid var(--color-primary)' }}>
             <h2 style={{ fontSize: '2.5rem', marginBottom: '20px', color: 'var(--color-text-primary)' }}>Inspire. Educate. Innovate.</h2>
-            <p style={{ maxWidth: '800px', margin: '0 auto', color: 'var(--color-text-secondary)', fontSize: '1.2rem', lineHeight: 1.8 }}>
+            <p style={{ maxWidth: '800px', margin: '0 auto', color: 'var(--color-text-secondary)', fontSize: '1.2rem', lineHeight: 1.8, marginBottom: '20px' }}>
               To inspire, educate, train, and empower the next generation of Ghanaian space scientists, engineers, researchers, and innovators. We aim to build a strong foundation for space exploration and research in Ghana through world-class academic programs, cutting-edge research, and technology development.
             </p>
+            <Link href="/about" style={{ display: 'inline-flex', alignItems: 'center', color: 'var(--color-primary)', fontWeight: 'bold', fontSize: '1.1rem' }}>
+              Read our full Mission &amp; Vision <ChevronRight size={20} style={{ marginLeft: '5px' }} />
+            </Link>
           </div>
         </FadeIn>
       </section>
@@ -127,8 +130,8 @@ export default function Home() {
                 SRI-Ghana develops strategic national projects that build long-term capability. These include the Ghana Space Weather Initiative, Ionospheric Monitoring Network, CubeSat Initiative, and the Space Science Data Center.
               </p>
               <div>
-                <Link href="/research" className="btn btn-primary">
-                  View Research Projects
+                <Link href="/research" className="btn btn-primary" style={{ display: 'inline-flex', alignItems: 'center' }}>
+                  Explore Flagship Projects <ChevronRight size={20} style={{ marginLeft: '5px' }} />
                 </Link>
               </div>
             </div>

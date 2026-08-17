@@ -581,46 +581,54 @@ export default function Programs() {
               <p>
                 The STEM Outreach Program of the Space Research Institute, Ghana (SRI-Ghana) is dedicated to inspiring young people to explore Science, Technology, Engineering, and Mathematics (STEM) and discover the opportunities that these fields offer.
               </p>
-              <p>
-                Our outreach begins with curiosity. Through engaging school programs, hands-on activities, scientific demonstrations, mentorship, competitions, and space-science experiences, we introduce students to the science and technology that shape our understanding of Earth and the universe.
-              </p>
-              <p>
-                Particular emphasis will be placed on connecting STEM education with space science and exploration, helping students understand how physics, mathematics, engineering, computing, astronomy, Earth science, and other disciplines come together to explore and study space.
-              </p>
-              <h4 style={{ color: 'var(--color-primary)', marginTop: '10px' }}>Our Outreach Areas</h4>
-              <ul style={{ paddingLeft: '20px', marginTop: '5px' }}>
-                <li>Space Science & Astronomy</li>
-                <li>Physics & Mathematics</li>
-                <li>Satellite & Space Technology</li>
-                <li>Robotics & Engineering</li>
-                <li>Coding, Computing & Artificial Intelligence</li>
-                <li>Earth Observation & Environmental Science</li>
-                <li>Atmospheric & Space Weather Science</li>
-                <li>Science, Innovation & Entrepreneurship</li>
-              </ul>
               
-              <h4 style={{ color: 'var(--color-primary)', marginTop: '10px' }}>What We Offer</h4>
-              <p>Through partnerships with schools, universities, educators, researchers, and industry, SRI-Ghana will provide:</p>
-              <ul style={{ paddingLeft: '20px', marginTop: '5px' }}>
-                <li>School STEM and space-science visits</li>
-                <li>Interactive lectures and scientific demonstrations</li>
-                <li>Space science and STEM clubs</li>
-                <li>Hands-on science and engineering activities</li>
-                <li>Astronomy observation programs</li>
-                <li>Coding and robotics workshops</li>
-                <li>Student research and innovation challenges</li>
-                <li>STEM competitions and science fairs</li>
-                <li>Mentorship and career guidance</li>
-                <li>STEM summer schools and camps</li>
-              </ul>
-              <h4 style={{ color: 'var(--color-primary)', marginTop: '10px' }}>Building the Pathway to Space</h4>
-              <p>
-                STEM Outreach represents the first stage of the SRI-Ghana talent-development pathway. Students who develop an interest in space and STEM through our outreach activities can progress into SEPS, university education, research internships, specialized postgraduate training, and ultimately careers in space science and technology.
-              </p>
-              <h4 style={{ color: 'var(--color-primary)', marginTop: '10px' }}>Inspire &rarr; Explore &rarr; Learn &rarr; Create &rarr; Research &rarr; Innovate</h4>
-              <p>
-                Our goal is to ensure that young people across Ghana have the opportunity to discover their potential, develop scientific skills, and become the scientists, engineers, researchers, and innovators who will shape Ghana&apos;s future in space.
-              </p>
+              <details style={{ marginTop: '5px' }}>
+                <summary style={{ cursor: 'pointer', color: 'var(--color-secondary)', fontWeight: 'bold', display: 'inline-block', padding: '5px 0', outline: 'none', userSelect: 'none', fontSize: '1rem' }}>
+                  Read Full Details &darr;
+                </summary>
+                <div style={{ marginTop: '15px', display: 'flex', flexDirection: 'column', gap: '15px', padding: '20px', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', borderLeft: '3px solid var(--color-secondary)' }}>
+                  <p>
+                    Our outreach begins with curiosity. Through engaging school programs, hands-on activities, scientific demonstrations, mentorship, competitions, and space-science experiences, we introduce students to the science and technology that shape our understanding of Earth and the universe.
+                  </p>
+                  <p>
+                    Particular emphasis will be placed on connecting STEM education with space science and exploration, helping students understand how physics, mathematics, engineering, computing, astronomy, Earth science, and other disciplines come together to explore and study space.
+                  </p>
+                  <h4 style={{ color: 'var(--color-primary)', marginTop: '10px' }}>Our Outreach Areas</h4>
+                  <ul style={{ paddingLeft: '20px', marginTop: '5px' }}>
+                    <li>Space Science & Astronomy</li>
+                    <li>Physics & Mathematics</li>
+                    <li>Satellite & Space Technology</li>
+                    <li>Robotics & Engineering</li>
+                    <li>Coding, Computing & Artificial Intelligence</li>
+                    <li>Earth Observation & Environmental Science</li>
+                    <li>Atmospheric & Space Weather Science</li>
+                    <li>Science, Innovation & Entrepreneurship</li>
+                  </ul>
+                  
+                  <h4 style={{ color: 'var(--color-primary)', marginTop: '10px' }}>What We Offer</h4>
+                  <p>Through partnerships with schools, universities, educators, researchers, and industry, SRI-Ghana will provide:</p>
+                  <ul style={{ paddingLeft: '20px', marginTop: '5px' }}>
+                    <li>School STEM and space-science visits</li>
+                    <li>Interactive lectures and scientific demonstrations</li>
+                    <li>Space science and STEM clubs</li>
+                    <li>Hands-on science and engineering activities</li>
+                    <li>Astronomy observation programs</li>
+                    <li>Coding and robotics workshops</li>
+                    <li>Student research and innovation challenges</li>
+                    <li>STEM competitions and science fairs</li>
+                    <li>Mentorship and career guidance</li>
+                    <li>STEM summer schools and camps</li>
+                  </ul>
+                  <h4 style={{ color: 'var(--color-primary)', marginTop: '10px' }}>Building the Pathway to Space</h4>
+                  <p>
+                    STEM Outreach represents the first stage of the SRI-Ghana talent-development pathway. Students who develop an interest in space and STEM through our outreach activities can progress into SEPS, university education, research internships, specialized postgraduate training, and ultimately careers in space science and technology.
+                  </p>
+                  <h4 style={{ color: 'var(--color-primary)', marginTop: '10px' }}>Inspire &rarr; Explore &rarr; Learn &rarr; Create &rarr; Research &rarr; Innovate</h4>
+                  <p>
+                    Our goal is to ensure that young people across Ghana have the opportunity to discover their potential, develop scientific skills, and become the scientists, engineers, researchers, and innovators who will shape Ghana&apos;s future in space.
+                  </p>
+                </div>
+              </details>
             </div>
           </div>
 
@@ -634,51 +642,59 @@ export default function Programs() {
               <p>
                 The Workshops & Training Program at the Space Research Institute, Ghana (SRI-Ghana) is designed to strengthen the scientific, technical, and research capabilities of students, educators, researchers, engineers, and professionals interested in space science and technology.
               </p>
-              <p>
-                Our programs bridge the gap between academic knowledge and practical experience, providing participants with opportunities to develop relevant skills through expert-led workshops, short courses, technical training, hands-on projects, research seminars, and intensive learning programs.
-              </p>
-              <h4 style={{ color: 'var(--color-primary)', marginTop: '10px' }}>Areas of Training</h4>
-              <p>Our training activities will cover a broad range of space-related disciplines, including:</p>
-              <ul style={{ paddingLeft: '20px', marginTop: '5px' }}>
-                <li>Space Science & Space Physics</li>
-                <li>Heliophysics & Space Weather</li>
-                <li>Ionospheric & Atmospheric Science</li>
-                <li>Astronomy & Astrophysics</li>
-                <li>Earth Observation & Remote Sensing</li>
-                <li>Satellite & CubeSat Technology</li>
-                <li>Space Systems Engineering</li>
-                <li>Space Instrumentation & Robotics</li>
-                <li>Scientific Programming & Computing</li>
-                <li>Space Data Science</li>
-                <li>Artificial Intelligence & Machine Learning</li>
-                <li>Geospatial Science & GIS</li>
-                <li>Research Methods & Scientific Communication</li>
-              </ul>
-
-              <h4 style={{ color: 'var(--color-primary)', marginTop: '10px' }}>Training Opportunities</h4>
-              <p>SRI-Ghana will provide training opportunities at different levels, from introductory programs for students to advanced professional and research training.</p>
-              <ul style={{ paddingLeft: '20px' }}>
-                <li><strong>For Students</strong><br/>Hands-on workshops, technical boot camps, summer schools, research training, coding programs, robotics, satellite projects, and space-science activities.</li>
-                <li><strong>For Educators</strong><br/>Professional development and training designed to strengthen the teaching of STEM, astronomy, space science, and emerging technologies.</li>
-                <li><strong>For Researchers & Professionals</strong><br/>Advanced technical workshops, scientific seminars, research methods, computational training, data analysis, and specialized space-science training.</li>
-              </ul>
               
-              <h4 style={{ color: 'var(--color-primary)', marginTop: '10px' }}>Learning Through Practice</h4>
-              <p>
-                Our training philosophy is centered on learning by doing. Participants will, where appropriate, work with real scientific datasets, computational tools, laboratory instruments, satellite observations, engineering systems, and research projects.
-              </p>
-              <p>Training activities may include:</p>
-              <p>
-                Short Courses | Technical Workshops | Boot Camps | Summer Schools | Research Seminars | Hands-on Laboratories | Professional Development
-              </p>
-              
-              <h4 style={{ color: 'var(--color-primary)', marginTop: '10px' }}>Developing Ghana&apos;s Space Science Workforce</h4>
-              <p>
-                SRI-Ghana&apos;s Workshops & Training Program forms an important part of our broader mission to develop the human capacity required for Ghana&apos;s future in space science and technology.
-              </p>
-              <p>
-                By connecting education, practical training, research, and innovation, we aim to equip participants with the knowledge and skills needed to pursue further education, undertake meaningful research, develop new technologies, and contribute to the national and international space community.
-              </p>
+              <details style={{ marginTop: '5px' }}>
+                <summary style={{ cursor: 'pointer', color: 'var(--color-primary)', fontWeight: 'bold', display: 'inline-block', padding: '5px 0', outline: 'none', userSelect: 'none', fontSize: '1rem' }}>
+                  Read Full Details &darr;
+                </summary>
+                <div style={{ marginTop: '15px', display: 'flex', flexDirection: 'column', gap: '15px', padding: '20px', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', borderLeft: '3px solid var(--color-primary)' }}>
+                  <p>
+                    Our programs bridge the gap between academic knowledge and practical experience, providing participants with opportunities to develop relevant skills through expert-led workshops, short courses, technical training, hands-on projects, research seminars, and intensive learning programs.
+                  </p>
+                  <h4 style={{ color: 'var(--color-primary)', marginTop: '10px' }}>Areas of Training</h4>
+                  <p>Our training activities will cover a broad range of space-related disciplines, including:</p>
+                  <ul style={{ paddingLeft: '20px', marginTop: '5px' }}>
+                    <li>Space Science & Space Physics</li>
+                    <li>Heliophysics & Space Weather</li>
+                    <li>Ionospheric & Atmospheric Science</li>
+                    <li>Astronomy & Astrophysics</li>
+                    <li>Earth Observation & Remote Sensing</li>
+                    <li>Satellite & CubeSat Technology</li>
+                    <li>Space Systems Engineering</li>
+                    <li>Space Instrumentation & Robotics</li>
+                    <li>Scientific Programming & Computing</li>
+                    <li>Space Data Science</li>
+                    <li>Artificial Intelligence & Machine Learning</li>
+                    <li>Geospatial Science & GIS</li>
+                    <li>Research Methods & Scientific Communication</li>
+                  </ul>
+    
+                  <h4 style={{ color: 'var(--color-primary)', marginTop: '10px' }}>Training Opportunities</h4>
+                  <p>SRI-Ghana will provide training opportunities at different levels, from introductory programs for students to advanced professional and research training.</p>
+                  <ul style={{ paddingLeft: '20px' }}>
+                    <li><strong>For Students</strong><br/>Hands-on workshops, technical boot camps, summer schools, research training, coding programs, robotics, satellite projects, and space-science activities.</li>
+                    <li><strong>For Educators</strong><br/>Professional development and training designed to strengthen the teaching of STEM, astronomy, space science, and emerging technologies.</li>
+                    <li><strong>For Researchers & Professionals</strong><br/>Advanced technical workshops, scientific seminars, research methods, computational training, data analysis, and specialized space-science training.</li>
+                  </ul>
+                  
+                  <h4 style={{ color: 'var(--color-primary)', marginTop: '10px' }}>Learning Through Practice</h4>
+                  <p>
+                    Our training philosophy is centered on learning by doing. Participants will, where appropriate, work with real scientific datasets, computational tools, laboratory instruments, satellite observations, engineering systems, and research projects.
+                  </p>
+                  <p>Training activities may include:</p>
+                  <p>
+                    Short Courses | Technical Workshops | Boot Camps | Summer Schools | Research Seminars | Hands-on Laboratories | Professional Development
+                  </p>
+                  
+                  <h4 style={{ color: 'var(--color-primary)', marginTop: '10px' }}>Developing Ghana&apos;s Space Science Workforce</h4>
+                  <p>
+                    SRI-Ghana&apos;s Workshops & Training Program forms an important part of our broader mission to develop the human capacity required for Ghana&apos;s future in space science and technology.
+                  </p>
+                  <p>
+                    By connecting education, practical training, research, and innovation, we aim to equip participants with the knowledge and skills needed to pursue further education, undertake meaningful research, develop new technologies, and contribute to the national and international space community.
+                  </p>
+                </div>
+              </details>
             </div>
           </div>
         </div>

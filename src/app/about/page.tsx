@@ -32,20 +32,31 @@ export default function About() {
                 The Space Research Institute, Ghana (SRI-Ghana) is envisioned as a research, education, innovation, and capacity-building institution dedicated to advancing space science and technology in Ghana and contributing to the global space research community.
               </p>
               <p>
-                The establishment of the Institute is motivated by the need to strengthen attention, investment, education, research, and human-capacity development in space science and exploration in Ghana. Although Ghana has a growing community of scientists, engineers, students, and innovators with an interest in space, there remains a need for a dedicated platform through which young people can be systematically introduced to space science, guided toward relevant academic and professional pathways, and ultimately supported to undertake meaningful research and innovation.
+                We aim to build a strong foundation for space exploration by establishing a continuous pathway from early outreach in high schools to advanced university research and professional innovation.
               </p>
-              <p>
-                The foundation of this vision is the establishment of the Space Exploration and Physics Society (SEPS), an outreach and awareness initiative designed to introduce space science to students, particularly at the senior high school level, across Ghana. Through SEPS, students will be exposed to astronomy, space physics, Earth and atmospheric sciences, satellite technology, space exploration, coding, data science, and other areas related to space and STEM.
-              </p>
-              <p>
-                The Space Research Institute will build upon this foundation by creating a continuous pathway through which interested students can progress from awareness and curiosity to education, training, research, innovation, and professional development.
-              </p>
-              <p>
-                The Institute will seek to create opportunities for Ghanaian students, scientists, engineers, educators, and innovators to participate in research and technology development while establishing collaborations with universities, research institutions, government agencies, international organizations, space agencies, and private-sector partners.
-              </p>
-              <p>
-                Ultimately, the Institute seeks to contribute to the development of a sustainable space-science ecosystem in Ghana in which young Ghanaian scientists can develop their skills, conduct internationally relevant research, develop innovative technologies, and contribute to humanity's understanding and exploration of space.
-              </p>
+              
+              <details style={{ marginTop: '10px' }}>
+                <summary style={{ cursor: 'pointer', color: 'var(--color-primary)', fontWeight: 'bold', display: 'inline-block', padding: '5px 0', outline: 'none', userSelect: 'none' }}>
+                  Read Full Background &amp; Context &darr;
+                </summary>
+                <div style={{ marginTop: '15px', display: 'flex', flexDirection: 'column', gap: '20px', color: 'var(--color-text-secondary)', padding: '25px', background: 'rgba(255,255,255,0.02)', borderRadius: '12px', borderLeft: '3px solid var(--color-primary)' }}>
+                  <p>
+                    The establishment of the Institute is motivated by the need to strengthen attention, investment, education, research, and human-capacity development in space science and exploration in Ghana. Although Ghana has a growing community of scientists, engineers, students, and innovators with an interest in space, there remains a need for a dedicated platform through which young people can be systematically introduced to space science, guided toward relevant academic and professional pathways, and ultimately supported to undertake meaningful research and innovation.
+                  </p>
+                  <p>
+                    The foundation of this vision is the establishment of the Space Exploration and Physics Society (SEPS), an outreach and awareness initiative designed to introduce space science to students, particularly at the senior high school level, across Ghana. Through SEPS, students will be exposed to astronomy, space physics, Earth and atmospheric sciences, satellite technology, space exploration, coding, data science, and other areas related to space and STEM.
+                  </p>
+                  <p>
+                    The Space Research Institute will build upon this foundation by creating a continuous pathway through which interested students can progress from awareness and curiosity to education, training, research, innovation, and professional development.
+                  </p>
+                  <p>
+                    The Institute will seek to create opportunities for Ghanaian students, scientists, engineers, educators, and innovators to participate in research and technology development while establishing collaborations with universities, research institutions, government agencies, international organizations, space agencies, and private-sector partners.
+                  </p>
+                  <p>
+                    Ultimately, the Institute seeks to contribute to the development of a sustainable space-science ecosystem in Ghana in which young Ghanaian scientists can develop their skills, conduct internationally relevant research, develop innovative technologies, and contribute to humanity&apos;s understanding and exploration of space.
+                  </p>
+                </div>
+              </details>
             </div>
           </div>
         </div>
@@ -59,12 +70,20 @@ export default function About() {
               <p>
                 To inspire, educate, train, and empower the next generation of Ghanaian space scientists, engineers, and innovators while advancing space science research, technological innovation, and international collaboration for the benefit of Ghana, Africa, and the global space community.
               </p>
-              <p>
-                Our mission begins with young people. We seek to introduce students to space science at an early stage, nurture their curiosity, provide access to knowledge and mentorship, develop their scientific and technical abilities, and create opportunities for them to progress into higher education, research, innovation, and professional careers.
-              </p>
-              <p>
-                At the same time, the Institute will support researchers and professionals by providing opportunities for collaboration, capacity development, scientific research, technology development, and participation in international research programs.
-              </p>
+              
+              <details style={{ marginTop: '5px' }}>
+                <summary style={{ cursor: 'pointer', color: 'var(--color-primary)', fontWeight: 'bold', display: 'inline-block', padding: '5px 0', outline: 'none', userSelect: 'none', fontSize: '0.95rem' }}>
+                  Read More &darr;
+                </summary>
+                <div style={{ marginTop: '10px', display: 'flex', flexDirection: 'column', gap: '15px', padding: '15px', background: 'rgba(255,255,255,0.02)', borderRadius: '8px', borderLeft: '2px solid var(--color-primary)' }}>
+                  <p>
+                    Our mission begins with young people. We seek to introduce students to space science at an early stage, nurture their curiosity, provide access to knowledge and mentorship, develop their scientific and technical abilities, and create opportunities for them to progress into higher education, research, innovation, and professional careers.
+                  </p>
+                  <p>
+                    At the same time, the Institute will support researchers and professionals by providing opportunities for collaboration, capacity development, scientific research, technology development, and participation in international research programs.
+                  </p>
+                </div>
+              </details>
             </div>
           </div>
           
@@ -75,12 +94,20 @@ export default function About() {
               <p>
                 To establish Ghana as a leading center for space science research, education, innovation, and human-capacity development in Africa, where every young person with an interest in space has an opportunity to learn, develop, conduct research, innovate, and contribute to global space exploration and scientific discovery.
               </p>
-              <p>
-                SRI-Ghana envisions a future in which Ghanaian students can discover space science while still in school, receive appropriate mentorship and training, pursue relevant university education, participate in research, develop technologies, and eventually become scientists, engineers, educators, entrepreneurs, and leaders within Ghana's emerging space ecosystem.
-              </p>
-              <p>
-                The long-term vision is to develop a generation of Ghanaian scientists and engineers who are not merely consumers of space-derived technologies but are also researchers, developers, innovators, and contributors to the global space community.
-              </p>
+              
+              <details style={{ marginTop: '5px' }}>
+                <summary style={{ cursor: 'pointer', color: 'var(--color-secondary)', fontWeight: 'bold', display: 'inline-block', padding: '5px 0', outline: 'none', userSelect: 'none', fontSize: '0.95rem' }}>
+                  Read More &darr;
+                </summary>
+                <div style={{ marginTop: '10px', display: 'flex', flexDirection: 'column', gap: '15px', padding: '15px', background: 'rgba(255,255,255,0.02)', borderRadius: '8px', borderLeft: '2px solid var(--color-secondary)' }}>
+                  <p>
+                    SRI-Ghana envisions a future in which Ghanaian students can discover space science while still in school, receive appropriate mentorship and training, pursue relevant university education, participate in research, develop technologies, and eventually become scientists, engineers, educators, entrepreneurs, and leaders within Ghana's emerging space ecosystem.
+                  </p>
+                  <p>
+                    The long-term vision is to develop a generation of Ghanaian scientists and engineers who are not merely consumers of space-derived technologies but are also researchers, developers, innovators, and contributors to the global space community.
+                  </p>
+                </div>
+              </details>
             </div>
           </div>
         </div>
