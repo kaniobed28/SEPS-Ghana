@@ -10,18 +10,18 @@ describe('Home Page', () => {
     expect(heading).toBeInTheDocument();
     
     // Check for some text in the heading
-    expect(heading).toHaveTextContent(/To the/i);
-    expect(heading).toHaveTextContent(/Cosmos/i);
+    expect(heading).toHaveTextContent(/Ghana's Future in/i);
+    expect(heading).toHaveTextContent(/Space Science/i);
     
     // Check for Call to Action buttons
-    const cta = screen.getByText(/Discover Our Mission/i);
+    const cta = screen.getByText(/Join the Community/i);
     expect(cta).toBeInTheDocument();
   });
   
   it('renders the directorates section', () => {
     render(<Home />);
     
-    const directorateTitle = screen.getByText(/Academic & Research/i);
+    const directorateTitle = screen.getByText(/Academic & Research Directorates/i);
     expect(directorateTitle).toBeInTheDocument();
   });
 });
