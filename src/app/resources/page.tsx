@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import PageHeader from '@/components/PageHeader';
 import { Download, FileText, Video, LayoutList } from 'lucide-react';
 
@@ -41,7 +41,7 @@ export default function Resources() {
                   </div>
                   <div>
                     <h4 style={{ color: 'var(--color-text-primary)', fontSize: '1.2rem', marginBottom: '4px' }}>{item.title}</h4>
-                    <span style={{ fontSize: '0.9rem', color: 'var(--color-primary)' }}>{item.type} <span style={{ color: 'var(--color-text-secondary)' }}>• {item.size}</span></span>
+                    <span style={{ fontSize: '0.9rem', color: 'var(--color-primary)' }}>{item.type} <span style={{ color: 'var(--color-text-secondary)' }}>â€¢ {item.size}</span></span>
                   </div>
                 </div>
                 <button className="btn btn-primary" style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '10px 20px', fontSize: '0.9rem' }}>

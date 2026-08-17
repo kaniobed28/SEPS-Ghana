@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import PageHeader from '@/components/PageHeader';
 import { GraduationCap, Briefcase, Building, Users } from 'lucide-react';
 
@@ -77,7 +77,7 @@ export default function Membership() {
     <div>
       <PageHeader 
         title="Join Our Community" 
-        subtitle="The Space Research Institute, Ghana (SRI-Ghana) welcomes everyone committed to advancing space science, technology, education, and innovation in Ghana and Africa."
+        subtitle="The Space Research Institute - Ghana (SRI-Ghana) welcomes everyone committed to advancing space science, technology, education, and innovation in Ghana and Africa."
       />
       
       <div className="container section" style={{ paddingTop: 0 }}>
@@ -148,7 +148,7 @@ export default function Membership() {
               <ul style={{ listStyle: 'none', padding: 0, margin: '0' }}>
                 {cat.benefits.slice(0, 3).map((benefit, i) => (
                   <li key={i} style={{ marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start', color: 'var(--color-text-secondary)', fontSize: '0.95rem' }}>
-                    <span style={{ color: cat.color, flexShrink: 0 }}>•</span>
+                    <span style={{ color: cat.color, flexShrink: 0 }}>â€¢</span>
                     <span style={{ lineHeight: 1.4 }}>{benefit}</span>
                   </li>
                 ))}
@@ -162,7 +162,7 @@ export default function Membership() {
                   <ul style={{ listStyle: 'none', padding: '10px 0 0 0', margin: '0' }}>
                     {cat.benefits.slice(3).map((benefit, i) => (
                       <li key={i + 3} style={{ marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start', color: 'var(--color-text-secondary)', fontSize: '0.95rem' }}>
-                        <span style={{ color: cat.color, flexShrink: 0 }}>•</span>
+                        <span style={{ color: cat.color, flexShrink: 0 }}>â€¢</span>
                         <span style={{ lineHeight: 1.4 }}>{benefit}</span>
                       </li>
                     ))}

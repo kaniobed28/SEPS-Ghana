@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import Image from 'next/image';
 import PageHeader from '@/components/PageHeader';
 import { Camera } from 'lucide-react';

@@ -1,11 +1,11 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import PageHeader from '@/components/PageHeader';
 import { Telescope, Rocket, Wrench, GraduationCap, Globe, BookOpen, Layers } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: 'Programs & Training | SRI-Ghana',
-  description: 'Explore the academic, research, outreach, and training programs at the Space Research Institute, Ghana.',
+  description: 'Explore the academic, research, outreach, and training programs at the Space Research Institute - Ghana.',
 };
 
 export default function Programs() {
@@ -30,7 +30,7 @@ export default function Programs() {
               Academic, Research & Training Framework
             </h2>
             <p style={{ color: 'var(--color-text-primary)', fontSize: '1.1rem', lineHeight: 1.8, marginBottom: '30px' }}>
-              The Space Research Institute, Ghana (SRI-Ghana) is committed to developing the next generation of Ghanaian space scientists, engineers, researchers, and innovators. Our academic and research framework provides a clear pathway from early space-science awareness through SEPS, to undergraduate education, Master's specialization, PhD research, and professional scientific careers.
+              The Space Research Institute - Ghana (SRI-Ghana) is committed to developing the next generation of Ghanaian space scientists, engineers, researchers, and innovators. Our academic and research framework provides a clear pathway from early space-science awareness through SEPS, to undergraduate education, Master's specialization, PhD research, and professional scientific careers.
             </p>
             <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem', lineHeight: 1.8, marginBottom: '30px' }}>
               SRI-Ghana will work with universities and research partners to provide students with specialized training, mentorship, internships, research opportunities, and access to space-science and technology projects. Our programs are organized into four major areas:
@@ -579,7 +579,7 @@ export default function Programs() {
                 <strong>Inspiring the Next Generation of Scientists, Engineers and Innovators</strong>
               </p>
               <p>
-                The STEM Outreach Program of the Space Research Institute, Ghana (SRI-Ghana) is dedicated to inspiring young people to explore Science, Technology, Engineering, and Mathematics (STEM) and discover the opportunities that these fields offer.
+                The STEM Outreach Program of the Space Research Institute - Ghana (SRI-Ghana) is dedicated to inspiring young people to explore Science, Technology, Engineering, and Mathematics (STEM) and discover the opportunities that these fields offer.
               </p>
               
               <details style={{ marginTop: '5px' }}>
@@ -640,7 +640,7 @@ export default function Programs() {
                 <strong>Building Skills. Advancing Knowledge. Developing Talent.</strong>
               </p>
               <p>
-                The Workshops & Training Program at the Space Research Institute, Ghana (SRI-Ghana) is designed to strengthen the scientific, technical, and research capabilities of students, educators, researchers, engineers, and professionals interested in space science and technology.
+                The Workshops & Training Program at the Space Research Institute - Ghana (SRI-Ghana) is designed to strengthen the scientific, technical, and research capabilities of students, educators, researchers, engineers, and professionals interested in space science and technology.
               </p>
               
               <details style={{ marginTop: '5px' }}>

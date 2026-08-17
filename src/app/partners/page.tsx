@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import PageHeader from '@/components/PageHeader';
 import { Landmark, Globe2, Building2, ShieldCheck, HeartHandshake } from 'lucide-react';
 

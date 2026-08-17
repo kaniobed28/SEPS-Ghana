@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import PageHeader from '@/components/PageHeader';
 import { Microscope, Star, Satellite, Lightbulb, GraduationCap, Users, Globe, Rocket, Layers, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
@@ -22,7 +22,7 @@ export default function Research() {
         <div style={{ marginBottom: '60px', textAlign: 'center', maxWidth: '900px', margin: '0 auto 60px auto' }}>
           <h2 style={{ fontSize: '2.5rem', color: 'var(--color-primary)', marginBottom: '20px' }}>SRI-GHANA RESEARCH THEMES</h2>
           <p style={{ color: 'var(--color-text-secondary)', fontSize: '1.1rem', lineHeight: 1.8 }}>
-            At the Space Research Institute, Ghana (SRI-Ghana), we believe that meaningful space research begins with education, practical experience, and innovation. Our PhD and advanced research programs address fundamental and applied questions across several core themes.
+            At the Space Research Institute - Ghana (SRI-Ghana), we believe that meaningful space research begins with education, practical experience, and innovation. Our PhD and advanced research programs address fundamental and applied questions across several core themes.
           </p>
         </div>
 

@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import { Space_Grotesk, Inter } from 'next/font/google';
 import Script from 'next/script';
 import './globals.css';
@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ['latin'], variable: '--font-body' });
 
 export const metadata: Metadata = {
   title: {
-    default: 'Space Research Institute, Ghana (SRI-Ghana)',
+    default: 'Space Research Institute - Ghana (SRI-Ghana)',
     template: '%s | SRI-Ghana',
   },
   description: 'Developing the next generation of Ghanaian space scientists, engineers, researchers, and innovators.',
@@ -28,18 +28,18 @@ export const metadata: Metadata = {
     'Astronomy Ghana',
     'CubeSat Ghana'
   ],
-  authors: [{ name: 'Space Research Institute, Ghana' }],
+  authors: [{ name: 'Space Research Institute - Ghana' }],
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://sri-ghana.org',
-    title: 'Space Research Institute, Ghana (SRI-Ghana)',
+    title: 'Space Research Institute - Ghana (SRI-Ghana)',
     description: 'Advancing space science, engineering, data, and education in Ghana and Africa.',
     siteName: 'SRI-Ghana'
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Space Research Institute, Ghana (SRI-Ghana)',
+    title: 'Space Research Institute - Ghana (SRI-Ghana)',
     description: 'Advancing space science, engineering, data, and education in Ghana and Africa.'
   }
 };
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
 const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'EducationalOrganization',
-  name: 'Space Research Institute, Ghana',
+  name: 'Space Research Institute - Ghana',
   alternateName: 'SRI-Ghana',
   url: 'https://sri-ghana.org',
   logo: 'https://sri-ghana.org/image.png',
