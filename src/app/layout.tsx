@@ -72,6 +72,8 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <ThemeProvider attribute="data-theme" defaultTheme="light" enableSystem={false}>
+          <div className="stars"></div>
+          <div className="twinkling"></div>
           <Navbar />
           <main>{children}</main>
           <Footer />

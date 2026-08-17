@@ -99,7 +99,7 @@ export default function Membership() {
             </a>
           </div>
           
-          <div className="google-form-container">
+          <div className="google-form-container" style={{ width: '100%', maxWidth: '800px', margin: '0 auto', height: '1000px', overflow: 'hidden', borderRadius: '12px' }}>
             <iframe 
               src="https://docs.google.com/forms/d/e/1FAIpQLSe2dSNGA2jja4w-WcgHywhzp-6_dKjM7v3x7exCml5SkW3reA/viewform?embedded=true" 
               width="100%" 
@@ -107,8 +107,7 @@ export default function Membership() {
               frameBorder="0" 
               marginHeight={0} 
               marginWidth={0}
-              scrolling="no"
-              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', overflow: 'hidden' }}
+              style={{ border: 'none', background: 'transparent' }}
             >
               Loading Registration Form...
             </iframe>
@@ -184,7 +183,7 @@ export default function Membership() {
             <p>
               Whether you are a student discovering space science for the first time, a researcher advancing knowledge, a professional sharing expertise, or an organization supporting innovation, your participation can help shape Ghana's future in space.
             </p>
-            <p style={{ fontWeight: 'bold', color: 'var(--color-secondary)' }}>
+            <p style={{ fontWeight: 'bold' }}>
               Join the SRI-Ghana community and be part of a growing network working to inspire young people, develop scientific talent, advance research, create innovative technologies, and contribute to the global space community.
             </p>
           </div>
