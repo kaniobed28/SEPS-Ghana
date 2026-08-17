@@ -146,14 +146,30 @@ export default function Membership() {
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem' }}>{cat.description}</p>
               </div>
               
-              <ul style={{ listStyle: 'none', padding: 0, margin: '0', flexGrow: 1 }}>
-                {cat.benefits.map((benefit, i) => (
+              <ul style={{ listStyle: 'none', padding: 0, margin: '0' }}>
+                {cat.benefits.slice(0, 3).map((benefit, i) => (
                   <li key={i} style={{ marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start', color: 'var(--color-text-secondary)', fontSize: '0.95rem' }}>
                     <span style={{ color: cat.color, flexShrink: 0 }}>•</span>
                     <span style={{ lineHeight: 1.4 }}>{benefit}</span>
                   </li>
                 ))}
               </ul>
+              
+              {cat.benefits.length > 3 && (
+                <details style={{ marginTop: '5px', flexGrow: 1 }}>
+                  <summary style={{ cursor: 'pointer', color: cat.color, fontWeight: 'bold', display: 'inline-block', padding: '5px 0', outline: 'none', userSelect: 'none', fontSize: '0.9rem' }}>
+                    View all {cat.benefits.length} benefits &darr;
+                  </summary>
+                  <ul style={{ listStyle: 'none', padding: '10px 0 0 0', margin: '0' }}>
+                    {cat.benefits.slice(3).map((benefit, i) => (
+                      <li key={i + 3} style={{ marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start', color: 'var(--color-text-secondary)', fontSize: '0.95rem' }}>
+                        <span style={{ color: cat.color, flexShrink: 0 }}>•</span>
+                        <span style={{ lineHeight: 1.4 }}>{benefit}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </details>
+              )}
             </div>
           ))}
         </div>
