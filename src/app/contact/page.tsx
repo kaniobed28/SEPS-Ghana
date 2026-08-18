@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import styles from './page.module.css';
 import PageHeader from '@/components/PageHeader';
 import { MapPin, Mail, Phone, Send } from 'lucide-react';

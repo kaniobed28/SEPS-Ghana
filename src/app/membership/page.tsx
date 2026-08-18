@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import PageHeader from '@/components/PageHeader';
 import { GraduationCap, Briefcase, Building, Users } from 'lucide-react';
 
@@ -77,7 +77,7 @@ export default function Membership() {
     <div>
       <PageHeader 
         title="Join Our Community" 
-        subtitle="The Space Research Institute, Ghana (SRI-Ghana) welcomes everyone committed to advancing space science, technology, education, and innovation in Ghana and Africa."
+        subtitle="The Space Research Institute - Ghana (SRI-Ghana) welcomes everyone committed to advancing space science, technology, education, and innovation in Ghana and Africa."
       />
       
       <div className="container section" style={{ paddingTop: 0 }}>
@@ -99,7 +99,7 @@ export default function Membership() {
             </a>
           </div>
           
-          <div className="google-form-container">
+          <div className="google-form-container" style={{ width: '100%', maxWidth: '800px', margin: '0 auto', height: '1000px', overflow: 'hidden', borderRadius: '12px' }}>
             <iframe 
               src="https://docs.google.com/forms/d/e/1FAIpQLSe2dSNGA2jja4w-WcgHywhzp-6_dKjM7v3x7exCml5SkW3reA/viewform?embedded=true" 
               width="100%" 
@@ -107,8 +107,7 @@ export default function Membership() {
               frameBorder="0" 
               marginHeight={0} 
               marginWidth={0}
-              scrolling="no"
-              style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 'none', overflow: 'hidden' }}
+              style={{ border: 'none', background: 'transparent' }}
             >
               Loading Registration Form...
             </iframe>
@@ -149,7 +148,7 @@ export default function Membership() {
               <ul style={{ listStyle: 'none', padding: 0, margin: '0' }}>
                 {cat.benefits.slice(0, 3).map((benefit, i) => (
                   <li key={i} style={{ marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start', color: 'var(--color-text-secondary)', fontSize: '0.95rem' }}>
-                    <span style={{ color: cat.color, flexShrink: 0 }}>•</span>
+                    <span style={{ color: cat.color, flexShrink: 0 }}>â€¢</span>
                     <span style={{ lineHeight: 1.4 }}>{benefit}</span>
                   </li>
                 ))}
@@ -163,7 +162,7 @@ export default function Membership() {
                   <ul style={{ listStyle: 'none', padding: '10px 0 0 0', margin: '0' }}>
                     {cat.benefits.slice(3).map((benefit, i) => (
                       <li key={i + 3} style={{ marginBottom: '12px', display: 'flex', gap: '10px', alignItems: 'flex-start', color: 'var(--color-text-secondary)', fontSize: '0.95rem' }}>
-                        <span style={{ color: cat.color, flexShrink: 0 }}>•</span>
+                        <span style={{ color: cat.color, flexShrink: 0 }}>â€¢</span>
                         <span style={{ lineHeight: 1.4 }}>{benefit}</span>
                       </li>
                     ))}
@@ -184,7 +183,7 @@ export default function Membership() {
             <p>
               Whether you are a student discovering space science for the first time, a researcher advancing knowledge, a professional sharing expertise, or an organization supporting innovation, your participation can help shape Ghana's future in space.
             </p>
-            <p style={{ fontWeight: 'bold', color: 'var(--color-secondary)' }}>
+            <p style={{ fontWeight: 'bold' }}>
               Join the SRI-Ghana community and be part of a growing network working to inspire young people, develop scientific talent, advance research, create innovative technologies, and contribute to the global space community.
             </p>
           </div>

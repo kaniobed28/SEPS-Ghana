@@ -1,10 +1,10 @@
-import type { Metadata } from 'next';
+﻿import type { Metadata } from 'next';
 import PageHeader from '@/components/PageHeader';
 import { Target, Lightbulb, Info, Rocket } from 'lucide-react';
 
 export const metadata: Metadata = {
   title: 'About Us | SRI-Ghana',
-  description: 'Learn about the mission, vision, and core objectives of the Space Research Institute, Ghana (SRI-Ghana).',
+  description: 'Learn about the mission, vision, and core objectives of the Space Research Institute - Ghana (SRI-Ghana).',
 };
 
 export default function About() {
@@ -29,7 +29,7 @@ export default function About() {
             </h2>
             <div style={{ color: 'var(--color-text-primary)', fontSize: '1.1rem', lineHeight: 1.8, display: 'flex', flexDirection: 'column', gap: '20px' }}>
               <p>
-                The Space Research Institute, Ghana (SRI-Ghana) is envisioned as a research, education, innovation, and capacity-building institution dedicated to advancing space science and technology in Ghana and contributing to the global space research community.
+                The Space Research Institute - Ghana (SRI-Ghana) is envisioned as a research, education, innovation, and capacity-building institution dedicated to advancing space science and technology in Ghana and contributing to the global space research community.
               </p>
               <p>
                 We aim to build a strong foundation for space exploration by establishing a continuous pathway from early outreach in high schools to advanced university research and professional innovation.
