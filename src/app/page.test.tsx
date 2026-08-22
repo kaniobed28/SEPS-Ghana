@@ -11,7 +11,8 @@ describe('Home Page', () => {
     expect(heading).toBeInTheDocument();
     
     // Check for some text in the heading
-    expect(heading).toHaveTextContent(/Ghana's Future in/i);
+    // The headline uses a typographic apostrophe (&rsquo;), not a straight quote.
+    expect(heading).toHaveTextContent(/Ghana[’']s Future in/i);
     expect(heading).toHaveTextContent(/Space Science/i);
     
     // Check for Call to Action buttons
