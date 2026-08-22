@@ -5,6 +5,7 @@ import './globals.css';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { ThemeProvider } from '@/components/ThemeProvider';
+import Starfield from '@/components/Starfield';
 
 const spaceGrotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-heading' });
 const inter = Inter({ subsets: ['latin'], variable: '--font-body' });
@@ -72,8 +73,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
         <ThemeProvider attribute="data-theme" defaultTheme="light" enableSystem={false}>
-          <div className="stars"></div>
-          <div className="twinkling"></div>
+          <Starfield fixed variant="light" density={1.1} constellation className="-z-10" />
           <Navbar />
           <main>{children}</main>
           <Footer />
