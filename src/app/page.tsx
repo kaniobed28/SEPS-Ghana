@@ -7,32 +7,31 @@ export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative flex items-center min-h-screen pt-32 pb-24 overflow-hidden bg-[#05050f]">
-        {/* Deep-space canvas: the starfield is the hero's primary surface */}
-        <Starfield variant="dark" density={2.2} shootingStars />
-
+      <section className="relative flex items-center min-h-screen pt-32 pb-24 overflow-hidden bg-[#fafafa]">
+        {/* Aurora wash sits under the constellation so the stars have something to sit on */}
         <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
-          <div className="absolute top-[-15%] right-[-5%] w-[60%] h-[70%] rounded-full bg-gradient-to-br from-violet-600/25 to-transparent blur-[130px] animate-pulse-slow"></div>
-          <div className="absolute bottom-[-20%] left-[-10%] w-[55%] h-[60%] rounded-full bg-gradient-to-tr from-cyan-500/20 to-transparent blur-[120px] animate-pulse-slow" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute top-[35%] left-[25%] w-[30%] h-[30%] rounded-full bg-gradient-to-r from-amber-400/10 to-transparent blur-[90px] animate-pulse-slow" style={{ animationDelay: '4s' }}></div>
-          {/* Horizon fade into the light sections below */}
-          <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent to-[#fafafa]"></div>
+          <div className="absolute top-[-15%] right-[-5%] w-[60%] h-[70%] rounded-full bg-gradient-to-br from-violet-200/50 to-transparent blur-[130px] animate-pulse-slow"></div>
+          <div className="absolute bottom-[-20%] left-[-10%] w-[55%] h-[60%] rounded-full bg-gradient-to-tr from-cyan-200/40 to-transparent blur-[120px] animate-pulse-slow" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-[35%] left-[25%] w-[30%] h-[30%] rounded-full bg-gradient-to-r from-amber-200/30 to-transparent blur-[90px] animate-pulse-slow" style={{ animationDelay: '4s' }}></div>
         </div>
+
+        {/* Drifting constellation: links make the motion legible on a pale surface */}
+        <Starfield variant="light" density={1.6} constellation />
 
         <div className="container relative z-10 text-center md:text-left">
           <FadeIn direction="up" delay={0.1}>
-            <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full border border-white/15 bg-white/5 backdrop-blur-sm">
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full border border-zinc-200 bg-white/70 backdrop-blur-sm">
               <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: 'var(--gradient-aurora)' }}></span>
-              <span className="text-xs font-semibold tracking-[0.15em] uppercase text-zinc-300">Space Research Institute &mdash; Ghana</span>
+              <span className="text-xs font-semibold tracking-[0.15em] uppercase text-zinc-500">Space Research Institute &mdash; Ghana</span>
             </div>
-            <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-bold tracking-tighter mb-8 max-w-5xl text-white leading-[1.05]">
+            <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-bold tracking-tighter mb-8 max-w-5xl text-[#09090b] leading-[1.05]">
               Ghana&rsquo;s Future in <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-300">Space Science</span> & <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-orange-400">Exploration</span>
+              <span className="gradient-text">Space Science</span> & <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500">Exploration</span>
             </h1>
           </FadeIn>
 
           <FadeIn direction="up" delay={0.3}>
-            <p className="text-xl md:text-2xl text-zinc-300 max-w-2xl mb-12 leading-relaxed font-light tracking-tight">
+            <p className="text-xl md:text-2xl text-zinc-600 max-w-2xl mb-12 leading-relaxed font-light tracking-tight">
               The Space Research Institute, Ghana (SRI-Ghana), is a non-governmental organization dedicated to advancing space science, technology, education, and innovation, empowering the next generation to contribute to the global space research community.
             </p>
           </FadeIn>
@@ -43,7 +42,7 @@ export default function Home() {
                 Join the Community
                 <ChevronRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <Link href="/about" className="btn text-lg border border-white/20 text-white hover:bg-white/10 hover:border-white/40 backdrop-blur-sm transition-all">
+              <Link href="/about" className="btn btn-outline text-lg">
                 Our Mission & Vision
               </Link>
             </div>
