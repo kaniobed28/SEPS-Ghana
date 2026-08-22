@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import PageHeader from '@/components/PageHeader';
 import { Microscope, Star, Satellite, Lightbulb, GraduationCap, Users, Globe, Rocket, Layers, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
@@ -31,38 +31,65 @@ export default function Research() {
           
           <div className="glass-panel hover-lift" style={{ padding: '40px', borderTop: '4px solid var(--color-primary)' }}>
             <Globe size={40} color="var(--color-primary)" style={{ marginBottom: '20px' }} />
-            <h3 style={{ fontSize: '1.5rem', color: 'var(--color-text-primary)', marginBottom: '15px' }}>Earth & Climate Science</h3>
+            <h3 style={{ fontSize: '1.5rem', color: 'var(--color-text-primary)', marginBottom: '15px' }}>Earth, Atmospheric & Environmental Sciences</h3>
             <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '20px', fontSize: '1rem', lineHeight: 1.6, marginBottom: '20px' }}>
-              <li>Atmospheric Dynamics & Variability</li>
-              <li>Climate and Environmental Change</li>
-              <li>Earth Observation & Remote Sensing</li>
+              <li>Mesoscale Atmospheric Processes</li>
+              <li>Climate and Radiation</li>
+              <li>Terrestrial Information Systems</li>
               <li>Atmosphere-Space Coupling</li>
-              <li>Satellite-Based Environmental Monitoring</li>
+              <li>Biospheric Sciences</li>
             </ul>
+            <div style={{ marginTop: '20px', position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '8px' }}>
+              <iframe 
+                src="https://www.youtube.com/embed/9VnccII-Kjg" 
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }} 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+                title="NASA 4K Earth Views"
+              ></iframe>
+            </div>
           </div>
 
           <div className="glass-panel hover-lift" style={{ padding: '40px', borderTop: '4px solid var(--color-secondary)' }}>
             <Star size={40} color="var(--color-secondary)" style={{ marginBottom: '20px' }} />
             <h3 style={{ fontSize: '1.5rem', color: 'var(--color-text-primary)', marginBottom: '15px' }}>Heliophysics & Space Weather</h3>
             <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '20px', fontSize: '1rem', lineHeight: 1.6, marginBottom: '20px' }}>
-              <li>Solar & Heliospheric Physics</li>
-              <li>Magnetospheric & Ionospheric Physics</li>
+              <li>Solar Physics & Heliospheric Modeling</li>
+              <li>Geospace Physics</li>
               <li>Space Plasma Physics & Solar Wind</li>
-              <li>Space Weather Forecasting</li>
+              <li>Space Weather Laboratory</li>
               <li>Geomagnetic Storms</li>
             </ul>
+            <div style={{ marginTop: '20px', position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '8px' }}>
+              <iframe 
+                src="https://www.youtube.com/embed/BEkRCSUFlww" 
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }} 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+                title="Heliophysics Video"
+              ></iframe>
+            </div>
           </div>
 
           <div className="glass-panel hover-lift" style={{ padding: '40px', borderTop: '4px solid var(--color-primary)' }}>
             <Microscope size={40} color="var(--color-primary)" style={{ marginBottom: '20px' }} />
             <h3 style={{ fontSize: '1.5rem', color: 'var(--color-text-primary)', marginBottom: '15px' }}>Astronomy & Planetary Science</h3>
             <ul style={{ color: 'var(--color-text-secondary)', paddingLeft: '20px', fontSize: '1rem', lineHeight: 1.6, marginBottom: '20px' }}>
-              <li>Stellar & Galactic Astrophysics</li>
+              <li>Exoplanets and Stellar Astrophysics</li>
               <li>Cosmology & High-Energy Astrophysics</li>
-              <li>Planetary Geophysics & Atmospheres</li>
+              <li>Planetary Environments Laboratory</li>
               <li>Comparative Planetology</li>
-              <li>Lunar Science</li>
+              <li>Lunar & Planetary Geology</li>
             </ul>
+            <div style={{ marginTop: '20px', position: 'relative', paddingBottom: '56.25%', height: 0, overflow: 'hidden', borderRadius: '8px' }}>
+              <iframe 
+                src="https://www.youtube.com/embed/iqJjTeYv5-M" 
+                style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', border: 0 }} 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen
+                title="Astronomy Video"
+              ></iframe>
+            </div>
           </div>
 
           <div className="glass-panel hover-lift" style={{ padding: '40px', borderTop: '4px solid var(--color-secondary)' }}>

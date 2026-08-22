@@ -1,4 +1,4 @@
-﻿import Link from 'next/link';
+import Link from 'next/link';
 import FadeIn from '@/components/FadeIn';
 import { Globe, Rocket, Layers, BookOpen, ChevronRight, Microscope } from 'lucide-react';
 
@@ -24,7 +24,7 @@ export default function Home() {
           
           <FadeIn direction="up" delay={0.3}>
             <p className="text-xl md:text-2xl text-zinc-600 max-w-2xl mb-12 leading-relaxed font-light tracking-tight">
-              The Space Research Institute - Ghana (SRI-Ghana) is dedicated to advancing space science, technology, education, and innovation, empowering the next generation to contribute to the global space research community.
+              The Space Research Institute, Ghana (SRI-Ghana), is a non-governmental organization dedicated to advancing space science, technology, education, and innovation, empowering the next generation to contribute to the global space research community.
             </p>
           </FadeIn>
           

@@ -1,4 +1,4 @@
-﻿import type { Metadata } from 'next';
+import type { Metadata } from 'next';
 import PageHeader from '@/components/PageHeader';
 import { Target, Lightbulb, Info, Rocket } from 'lucide-react';
 
@@ -236,6 +236,43 @@ export default function About() {
                 <h4 style={{ color: 'var(--color-text-primary)', marginBottom: '5px', fontSize: '1.2rem' }}>Sarah Osei</h4>
                 <p style={{ color: 'var(--color-secondary)', fontSize: '0.9rem', marginBottom: '15px' }}>Director, Education & Outreach</p>
                 <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.5 }}>Leading the SEPS initiative and STEM outreach across high schools in Ghana.</p>
+              </div>
+
+              {/* New Placeholders Added as requested by Dr. Samuel */}
+              <div className="glass-panel hover-lift" style={{ padding: '25px', background: 'rgba(255,255,255,0.02)', textAlign: 'center' }}>
+                <div style={{ width: '100px', height: '100px', borderRadius: '50%', background: 'rgba(255,255,255,0.1)', margin: '0 auto 20px auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Info size={40} color="var(--color-primary)" />
+                </div>
+                <h4 style={{ color: 'var(--color-text-primary)', marginBottom: '5px', fontSize: '1.2rem' }}>Obed KANI</h4>
+                <p style={{ color: 'var(--color-primary)', fontSize: '0.9rem', marginBottom: '15px' }}>Lead Developer</p>
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.5 }}>Architecting and building the digital presence of SRI-Ghana.</p>
+              </div>
+
+              <div className="glass-panel hover-lift" style={{ padding: '25px', background: 'rgba(255,255,255,0.02)', textAlign: 'center' }}>
+                <div style={{ width: '100px', height: '100px', borderRadius: '50%', background: 'rgba(255,255,255,0.1)', margin: '0 auto 20px auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Info size={40} color="var(--color-secondary)" />
+                </div>
+                <h4 style={{ color: 'var(--color-text-primary)', marginBottom: '5px', fontSize: '1.2rem' }}>To Be Announced</h4>
+                <p style={{ color: 'var(--color-secondary)', fontSize: '0.9rem', marginBottom: '15px' }}>Founding Member</p>
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.5 }}>Joining soon to advance Ghana's space research capabilities.</p>
+              </div>
+
+              <div className="glass-panel hover-lift" style={{ padding: '25px', background: 'rgba(255,255,255,0.02)', textAlign: 'center' }}>
+                <div style={{ width: '100px', height: '100px', borderRadius: '50%', background: 'rgba(255,255,255,0.1)', margin: '0 auto 20px auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Info size={40} color="var(--color-primary)" />
+                </div>
+                <h4 style={{ color: 'var(--color-text-primary)', marginBottom: '5px', fontSize: '1.2rem' }}>To Be Announced</h4>
+                <p style={{ color: 'var(--color-primary)', fontSize: '0.9rem', marginBottom: '15px' }}>Founding Member</p>
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.5 }}>Joining soon to advance Ghana's space research capabilities.</p>
+              </div>
+
+              <div className="glass-panel hover-lift" style={{ padding: '25px', background: 'rgba(255,255,255,0.02)', textAlign: 'center' }}>
+                <div style={{ width: '100px', height: '100px', borderRadius: '50%', background: 'rgba(255,255,255,0.1)', margin: '0 auto 20px auto', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <Info size={40} color="var(--color-secondary)" />
+                </div>
+                <h4 style={{ color: 'var(--color-text-primary)', marginBottom: '5px', fontSize: '1.2rem' }}>To Be Announced</h4>
+                <p style={{ color: 'var(--color-secondary)', fontSize: '0.9rem', marginBottom: '15px' }}>Founding Member</p>
+                <p style={{ color: 'var(--color-text-secondary)', fontSize: '0.9rem', lineHeight: 1.5 }}>Joining soon to advance Ghana's space research capabilities.</p>
               </div>
 
             </div>
