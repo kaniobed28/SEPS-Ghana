@@ -8,7 +8,7 @@ interface PageHeaderProps {
 
 export default function PageHeader({ title, subtitle, imageSrc }: PageHeaderProps) {
   return (
-    <div className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden border-b border-zinc-100 bg-[#fafafa]">
+    <div className="relative pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden border-b border-zinc-100 bg-[#fafafa]/50">
       <div className="absolute top-0 right-0 w-full h-full overflow-hidden z-0 pointer-events-none">
         <div className="absolute -top-[50%] -right-[10%] w-[60%] h-[150%] rounded-full opacity-30 blur-[120px]" style={{ background: 'var(--gradient-aurora-soft)' }}></div>
       </div>

@@ -1,9 +1,11 @@
 ﻿import Link from 'next/link';
 import { AtSign, Users, MessageCircle, ArrowUpRight } from 'lucide-react';
+import Starfield from '@/components/Starfield';
 
 export default function Footer() {
   return (
     <footer className="relative bg-[#09090b] pt-24 pb-10 overflow-hidden">
+      <Starfield variant="dark" density={1.1} />
       <div className="absolute top-0 left-0 right-0 h-px" style={{ background: 'var(--gradient-aurora)' }} />
       <div className="absolute -top-40 left-1/2 -translate-x-1/2 w-[60%] h-80 rounded-full blur-[120px] opacity-20 pointer-events-none" style={{ background: 'var(--gradient-aurora)' }} />
 

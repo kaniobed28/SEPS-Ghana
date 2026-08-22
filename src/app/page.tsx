@@ -1,44 +1,49 @@
 import Link from 'next/link';
 import FadeIn from '@/components/FadeIn';
+import Starfield from '@/components/Starfield';
 import { Globe, Rocket, Layers, BookOpen, ChevronRight, Microscope } from 'lucide-react';
 
 export default function Home() {
   return (
     <div className="flex flex-col min-h-screen">
       {/* Hero Section */}
-      <section className="relative flex items-center min-h-screen pt-32 pb-24 overflow-hidden bg-[#fafafa]">
-        {/* Subtle abstract background graphic for premium light theme */}
-        <div className="absolute top-0 right-0 w-full h-full overflow-hidden z-0 pointer-events-none">
-          <div className="absolute top-[-10%] right-[-5%] w-[60%] h-[60%] rounded-full bg-gradient-to-br from-violet-200/40 to-transparent blur-[120px] animate-pulse-slow"></div>
-          <div className="absolute bottom-[-10%] left-[-5%] w-[50%] h-[50%] rounded-full bg-gradient-to-tr from-amber-200/30 to-transparent blur-[100px] animate-pulse-slow" style={{ animationDelay: '2s' }}></div>
-          <div className="absolute top-[40%] left-[20%] w-[30%] h-[30%] rounded-full bg-gradient-to-r from-cyan-200/25 to-transparent blur-[80px] animate-pulse-slow" style={{ animationDelay: '4s' }}></div>
+      <section className="relative flex items-center min-h-screen pt-32 pb-24 overflow-hidden bg-[#05050f]">
+        {/* Deep-space canvas: the starfield is the hero's primary surface */}
+        <Starfield variant="dark" density={2.2} shootingStars />
+
+        <div className="absolute inset-0 overflow-hidden z-0 pointer-events-none">
+          <div className="absolute top-[-15%] right-[-5%] w-[60%] h-[70%] rounded-full bg-gradient-to-br from-violet-600/25 to-transparent blur-[130px] animate-pulse-slow"></div>
+          <div className="absolute bottom-[-20%] left-[-10%] w-[55%] h-[60%] rounded-full bg-gradient-to-tr from-cyan-500/20 to-transparent blur-[120px] animate-pulse-slow" style={{ animationDelay: '2s' }}></div>
+          <div className="absolute top-[35%] left-[25%] w-[30%] h-[30%] rounded-full bg-gradient-to-r from-amber-400/10 to-transparent blur-[90px] animate-pulse-slow" style={{ animationDelay: '4s' }}></div>
+          {/* Horizon fade into the light sections below */}
+          <div className="absolute bottom-0 left-0 right-0 h-40 bg-gradient-to-b from-transparent to-[#fafafa]"></div>
         </div>
 
         <div className="container relative z-10 text-center md:text-left">
           <FadeIn direction="up" delay={0.1}>
-            <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full border border-zinc-200 bg-white/60 backdrop-blur-sm">
-              <span className="w-1.5 h-1.5 rounded-full" style={{ background: 'var(--gradient-aurora)' }}></span>
-              <span className="text-xs font-semibold tracking-[0.15em] uppercase text-zinc-500">Space Research Institute &mdash; Ghana</span>
+            <div className="inline-flex items-center gap-2 mb-6 px-4 py-1.5 rounded-full border border-white/15 bg-white/5 backdrop-blur-sm">
+              <span className="w-1.5 h-1.5 rounded-full animate-pulse" style={{ background: 'var(--gradient-aurora)' }}></span>
+              <span className="text-xs font-semibold tracking-[0.15em] uppercase text-zinc-300">Space Research Institute &mdash; Ghana</span>
             </div>
-            <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-bold tracking-tighter mb-8 max-w-5xl text-[#09090b] leading-[1.05]">
-              Ghana's Future in <br />
-              <span className="gradient-text">Space Science</span> & <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-500 to-orange-500">Exploration</span>
+            <h1 className="text-5xl md:text-7xl lg:text-[5.5rem] font-bold tracking-tighter mb-8 max-w-5xl text-white leading-[1.05]">
+              Ghana&rsquo;s Future in <br />
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-fuchsia-400 to-cyan-300">Space Science</span> & <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-300 to-orange-400">Exploration</span>
             </h1>
           </FadeIn>
-          
+
           <FadeIn direction="up" delay={0.3}>
-            <p className="text-xl md:text-2xl text-zinc-600 max-w-2xl mb-12 leading-relaxed font-light tracking-tight">
+            <p className="text-xl md:text-2xl text-zinc-300 max-w-2xl mb-12 leading-relaxed font-light tracking-tight">
               The Space Research Institute, Ghana (SRI-Ghana), is a non-governmental organization dedicated to advancing space science, technology, education, and innovation, empowering the next generation to contribute to the global space research community.
             </p>
           </FadeIn>
-          
+
           <FadeIn direction="up" delay={0.5}>
             <div className="flex flex-col sm:flex-row gap-5 justify-center md:justify-start">
               <Link href="/membership" className="btn btn-primary text-lg group">
                 Join the Community
                 <ChevronRight size={20} className="ml-2 group-hover:translate-x-1 transition-transform" />
               </Link>
-              <Link href="/about" className="btn btn-outline text-lg">
+              <Link href="/about" className="btn text-lg border border-white/20 text-white hover:bg-white/10 hover:border-white/40 backdrop-blur-sm transition-all">
                 Our Mission & Vision
               </Link>
             </div>
@@ -47,7 +52,7 @@ export default function Home() {
       </section>
 
       {/* Mission Intro Section */}
-      <section className="section bg-white border-y border-zinc-100">
+      <section className="section bg-white/80 border-y border-zinc-100">
         <div className="container">
           <FadeIn direction="up">
             <div className="max-w-4xl mx-auto text-center glass-panel p-12 md:p-16 rounded-[2rem] shadow-sm border border-white/80">
@@ -64,7 +69,7 @@ export default function Home() {
       </section>
 
       {/* Four Directorates Section */}
-      <section className="section bg-[#fafafa]">
+      <section className="section bg-[#fafafa]/70">
         <div className="container">
           <FadeIn direction="up">
             <div className="text-center mb-20">
@@ -141,7 +146,7 @@ export default function Home() {
 
       {/* Flagship Research Section */}
       <section className="section bg-[#09090b] text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] opacity-20"></div>
+        <Starfield variant="dark" density={1.4} shootingStars />
         <div className="container relative z-10">
           <FadeIn direction="up">
             <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -180,7 +185,7 @@ export default function Home() {
       </section>
       
       {/* Video Section */}
-      <section className="section bg-[#fafafa]">
+      <section className="section bg-[#fafafa]/70">
         <div className="container">
           <FadeIn direction="up">
             <div className="max-w-5xl mx-auto text-center">
